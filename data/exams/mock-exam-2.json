@@ -1,29 +1,12 @@
 {
   "id": "mock-exam-2",
   "name": "Mock Exam 2",
-  "description": "Full practice exam 2 covering all topics.",
+  "description": "Distributions focus — binomial, Poisson, hypergeometric.",
   "questionIds": [
-    "poisson_distribution_009",
-    "binomial_022",
-    "normal_app_008",
-    "normal_023",
-    "random_variables_020",
-    "normal_039",
-    "normal_012",
-    "normal_016",
-    "binomial_032",
-    "normal_032",
-    "discrete_distributions_008",
-    "normal_044",
-    "binomial_011",
-    "foundations_010",
-    "normal_app_020",
-    "normal_033",
-    "normal_app_003",
-    "normal_app_032",
-    "random_variables_029",
-    "normal_app_009"
+    "imp_011", "imp_013", "imp_014", "imp_015", "imp_016", "imp_017",
+    "imp_018", "imp_019", "imp_020", "imp_021", "imp_022a", "imp_022b",
+    "imp_001", "imp_006", "imp_008"
   ],
   "timeLimit": 60,
-  "passingScore": 70
+  "passingScore": 60
 }

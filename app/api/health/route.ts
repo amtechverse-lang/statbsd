@@ -1,16 +1,13 @@
 import { NextResponse } from "next/server";
-import { getAllQuestions, getModules } from "@/lib/content";
+import { getExamPracticeQuestions, getRevisionTopics } from "@/lib/content";
 
 export async function GET() {
-  const modules = getModules();
-  const questions = getAllQuestions();
-
+  const exam = getExamPracticeQuestions();
   return NextResponse.json({
     status: "ok",
-    mode: "guest",
+    mode: "exam-prep",
     database: false,
-    seeded: true,
-    modules: modules.length,
-    questions: questions.length,
+    revisionTopics: getRevisionTopics().length,
+    examQuestions: exam.length,
   });
 }

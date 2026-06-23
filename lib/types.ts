@@ -60,6 +60,15 @@ export interface ExamData {
   passingScore: number;
 }
 
+export interface RevisionTopic {
+  id: string;
+  title: string;
+  icon: string;
+  questionTopic: string;
+  summary: string;
+  content: string;
+}
+
 export interface ProgressSummary {
   overall: number;
   completedModules: number;

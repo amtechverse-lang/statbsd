@@ -7,9 +7,8 @@ import {
   Home,
   BookOpen,
   PenLine,
-  BarChart3,
-  Wrench,
   ClipboardList,
+  Wrench,
   Menu,
   X,
 } from "lucide-react";
@@ -19,12 +18,10 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/modules", label: "Modules", icon: BookOpen, match: "/modules" },
-  { href: "/practice", label: "Practice", icon: PenLine },
-  { href: "/important", label: "Important", icon: ClipboardList, match: "/important" },
-  { href: "/progress", label: "Progress", icon: BarChart3 },
-  { href: "/exam-prep", label: "Exams", icon: ClipboardList, match: "/exam-prep" },
-  { href: "/tools", label: "Tools", icon: Wrench },
+  { href: "/practice", label: "Practice", icon: PenLine, match: "/practice" },
+  { href: "/revise", label: "Revise", icon: BookOpen, match: "/revise" },
+  { href: "/exam-prep", label: "Mock Exam", icon: ClipboardList, match: "/exam-prep" },
+  { href: "/tools", label: "Tools", icon: Wrench, match: "/tools" },
 ];
 
 export function DashboardNav() {
@@ -40,7 +37,7 @@ export function DashboardNav() {
             <span className="hidden sm:inline">StatMaster</span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => {
               const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
               return (
@@ -59,18 +56,13 @@ export function DashboardNav() {
             })}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <span className="hidden sm:inline text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-              Guest mode
-            </span>
-            <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
-              {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
-          </div>
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
 
         {mobileOpen && (
-          <nav className="lg:hidden border-t p-4 space-y-1">
+          <nav className="md:hidden border-t p-4 space-y-1">
             {navItems.map((item) => {
               const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
               return (
@@ -92,8 +84,8 @@ export function DashboardNav() {
         )}
       </header>
 
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background flex justify-around py-2">
-        {navItems.slice(0, 5).map((item) => {
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background flex justify-around py-2">
+        {navItems.map((item) => {
           const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
           return (
             <Link key={item.href} href={item.href} className={cn("flex flex-col items-center p-1 text-xs", active ? "text-primary" : "text-muted-foreground")}>

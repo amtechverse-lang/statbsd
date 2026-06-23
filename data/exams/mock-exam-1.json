@@ -1,29 +1,13 @@
 {
   "id": "mock-exam-1",
   "name": "Mock Exam 1",
-  "description": "Full practice exam 1 covering all topics.",
+  "description": "Mixed exam-style problems — all topics.",
   "questionIds": [
-    "discrete_uniform_002",
-    "normal_app_016",
-    "normal_001",
-    "binomial_012",
-    "continuous_distributions_005",
-    "binomial_001",
-    "hypergeometric_distribution_005",
-    "binomial_014",
-    "discrete_distributions_025",
-    "discrete_distributions_019",
-    "foundations_015",
-    "normal_app_018",
-    "poisson_distribution_018",
-    "foundations_001",
-    "normal_app_021",
-    "joint_distributions_020",
-    "exam_prep_004",
-    "joint_distributions_004",
-    "binomial_003",
-    "continuous_distributions_017"
+    "imp_001", "imp_006", "imp_015", "imp_016", "imp_017", "imp_018",
+    "imp_011", "imp_013", "imp_014", "imp_019", "imp_020", "imp_021",
+    "imp_022a", "imp_022b", "imp_023", "imp_024", "imp_025", "imp_026",
+    "imp_002", "imp_003"
   ],
-  "timeLimit": 60,
-  "passingScore": 70
+  "timeLimit": 90,
+  "passingScore": 60
 }

@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "StatMaster — Probability & Statistics Learning",
+    default: "StatMaster — Exam Prep for Probability & Statistics",
     template: "%s | StatMaster",
   },
   description:
-    "Interactive self-paced learning platform for Probability & Statistics. Master distributions, practice 438+ questions, and prepare for exams.",
+    "Fast exam preparation for Probability & Statistics. Practice real exam-style problems with step-by-step solutions. Revise any topic, skip what you know.",
   keywords: ["probability", "statistics", "binomial", "normal distribution", "learning"],
 };
 

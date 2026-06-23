@@ -1,61 +1,100 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExamPracticeEngine } from "@/components/practice/ExamPracticeEngine";
+import type { RevisionTopic } from "@/lib/types";
 
-interface QuestionSummary {
-  id: string;
-  moduleId: string;
-  topic: string;
-  difficulty: string;
-  type: string;
-}
-
-export default function PracticePage() {
-  const [questions, setQuestions] = useState<QuestionSummary[]>([]);
+function PracticeContent() {
+  const searchParams = useSearchParams();
+  const topic = searchParams.get("topic");
+  const [topics, setTopics] = useState<(RevisionTopic & { questionCount: number })[]>([]);
 
   useEffect(() => {
-    fetch("/api/questions")
-      .then((r) => r.json())
-      .then(setQuestions);
+    fetch("/api/revision").then((r) => r.json()).then(setTopics);
   }, []);
 
-  const byModule = questions.reduce<Record<string, QuestionSummary[]>>((acc, q) => {
-    if (!acc[q.moduleId]) acc[q.moduleId] = [];
-    acc[q.moduleId].push(q);
-    return acc;
-  }, {});
+  const fetchUrl = topic
+    ? `/api/questions?examOnly=true&revisionTopic=${topic}`
+    : "/api/questions?examOnly=true";
+
+  const activeTopic = topics.find((t) => t.id === topic);
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold">Practice Question Bank</h1>
-      <p className="text-muted-foreground">{questions.length} questions across all modules</p>
+      <div>
+        <h1 className="text-3xl font-bold">Exam Practice</h1>
+        <p className="text-muted-foreground mt-1">
+          Real exam-style problems with step-by-step solutions — skip any topic you already know
+        </p>
+      </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {Object.entries(byModule).map(([moduleId, qs]) => (
-          <Card key={moduleId}>
-            <CardHeader>
-              <CardTitle className="text-lg capitalize">{moduleId.replace(/-/g, " ")}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-3">{qs.length} questions</p>
-              <div className="flex flex-wrap gap-1 mb-3">
-                {["Easy", "Medium", "Hard"].map((d) => {
-                  const count = qs.filter((q) => q.difficulty === d).length;
-                  return count > 0 ? (
-                    <Badge key={d} variant="outline">{d}: {count}</Badge>
-                  ) : null;
-                })}
-              </div>
-              <Link href={`/modules/${moduleId}/practice`} className="text-primary text-sm hover:underline">
-                Start Practice →
-              </Link>
-            </CardContent>
-          </Card>
+      <div className="flex flex-wrap gap-2">
+        <Button variant={!topic ? "default" : "outline"} size="sm" asChild>
+          <Link href="/practice">All topics</Link>
+        </Button>
+        {topics.map((t) => (
+          <Button key={t.id} variant={topic === t.id ? "default" : "outline"} size="sm" asChild>
+            <Link href={`/practice?topic=${t.id}`}>
+              {t.icon} {t.title} ({t.questionCount})
+            </Link>
+          </Button>
         ))}
       </div>
+
+      {topic && activeTopic && (
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-normal text-muted-foreground">
+              Need a quick recap?{" "}
+              <Link href={`/revise/${topic}`} className="text-primary hover:underline">
+                Read {activeTopic.title} revision notes →
+              </Link>
+            </CardTitle>
+          </CardHeader>
+        </Card>
+      )}
+
+      <ExamPracticeEngine
+        fetchUrl={fetchUrl}
+        title={activeTopic ? `${activeTopic.icon} ${activeTopic.title} Practice` : undefined}
+        description={activeTopic?.summary}
+      />
+
+      {!topic && (
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {topics.map((t) => (
+            <Card key={t.id}>
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <span>{t.icon}</span> {t.title}
+                  <Badge variant="outline">{t.questionCount} Qs</Badge>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex gap-2">
+                <Button size="sm" asChild>
+                  <Link href={`/practice?topic=${t.id}`}>Practice</Link>
+                </Button>
+                <Button size="sm" variant="outline" asChild>
+                  <Link href={`/revise/${t.id}`}>Revise</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
     </div>
+  );
+}
+
+export default function PracticePage() {
+  return (
+    <Suspense fallback={<p>Loading...</p>}>
+      <PracticeContent />
+    </Suspense>
   );
 }

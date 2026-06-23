@@ -142,8 +142,8 @@ function ExamContent({ examId }: { examId: string }) {
                 <ul className="space-y-1 text-sm">
                   {result.studyPlan.recommendedModules.map((q) => (
                     <li key={q.id}>
-                      <Link href={`/modules/${q.moduleId}/practice`} className="text-primary hover:underline">
-                        {q.question.slice(0, 60)}...
+                      <Link href="/practice" className="text-primary hover:underline">
+                        Practice {q.question}
                       </Link>
                     </li>
                   ))}

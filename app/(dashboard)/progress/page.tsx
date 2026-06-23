@@ -1,93 +1,98 @@
 "use client";
 
-import { useContentMeta } from "@/lib/hooks/use-content-meta";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { CircularProgress } from "@/components/shared/CircularProgress";
-import { AchievementBadge } from "@/components/shared/AchievementBadge";
 import { Button } from "@/components/ui/button";
 import { useGuestProgress } from "@/lib/store/guest-progress";
+import type { RevisionTopic } from "@/lib/types";
 
 export default function ProgressPage() {
-  const { progress } = useContentMeta();
   const guest = useGuestProgress();
+  const [topics, setTopics] = useState<(RevisionTopic & { questionCount: number })[]>([]);
 
-  if (!progress) return <p>Loading progress...</p>;
+  useEffect(() => {
+    fetch("/api/revision").then((r) => r.json()).then(setTopics);
+  }, []);
 
-  const earnedKeys = new Set(guest.achievements);
+  const attempts = guest.questionAttempts;
+  const correct = attempts.filter((a) => a.correct).length;
+  const accuracy = attempts.length ? Math.round((correct / attempts.length) * 100) : 0;
+
+  const byTopic = topics.map((t) => ({
+    ...t,
+    done: 0,
+    total: t.questionCount,
+  }));
 
   return (
     <div className="space-y-8">
       <div className="flex justify-between items-start">
-        <h1 className="text-3xl font-bold">Your Progress</h1>
+        <div>
+          <h1 className="text-3xl font-bold">Your Progress</h1>
+          <p className="text-sm text-muted-foreground">Saved in this browser only</p>
+        </div>
         <Button variant="outline" size="sm" onClick={() => guest.resetProgress()}>
-          Reset progress
+          Reset
         </Button>
       </div>
-      <p className="text-sm text-muted-foreground -mt-4">
-        Saved locally in your browser. Clearing site data will reset progress.
-      </p>
+
+      <div className="grid gap-4 sm:grid-cols-3">
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-normal text-muted-foreground">Attempted</CardTitle>
+            <p className="text-3xl font-bold">{attempts.length}</p>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-normal text-muted-foreground">Correct</CardTitle>
+            <p className="text-3xl font-bold">{correct}</p>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-normal text-muted-foreground">Accuracy</CardTitle>
+            <p className="text-3xl font-bold">{accuracy}%</p>
+          </CardHeader>
+        </Card>
+      </div>
+
+      {guest.examAttempts.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Mock exams</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {guest.examAttempts.map((e, i) => (
+              <div key={i} className="flex justify-between text-sm">
+                <span>{e.examId}</span>
+                <span className={e.passed ? "text-green-600" : "text-muted-foreground"}>
+                  {Math.round(e.score)}% {e.passed ? "✓" : ""}
+                </span>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+      )}
 
       <Card>
         <CardHeader>
-          <CardTitle>Overall Progress</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <CircularProgress value={progress.overall} size={120} />
-            <div className="grid grid-cols-2 gap-4 flex-1">
-              <div>
-                <p className="text-sm text-muted-foreground">Modules Completed</p>
-                <p className="text-2xl font-bold">{progress.completedModules}/{progress.totalModules}</p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Questions Solved</p>
-                <p className="text-2xl font-bold">{progress.questionsSolved}</p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Accuracy</p>
-                <p className="text-2xl font-bold">{progress.accuracy}%</p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Streak</p>
-                <p className="text-2xl font-bold">{progress.streak} days</p>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Module Progress</CardTitle>
+          <CardTitle>Practice by topic</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          {progress.modules.map((mod) => (
-            <div key={mod.id} className="space-y-2">
+          {byTopic.map((t) => (
+            <div key={t.id} className="space-y-2">
               <div className="flex justify-between text-sm">
-                <span>{mod.title}</span>
-                <span className="font-medium">{mod.progress}%</span>
+                <Link href={`/practice?topic=${t.id}`} className="hover:text-primary">
+                  {t.icon} {t.title}
+                </Link>
+                <span>{t.questionCount} questions</span>
               </div>
-              <Progress value={mod.progress} className="h-2" />
+              <Progress value={0} className="h-1.5" />
             </div>
           ))}
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Achievements</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {(progress.allAchievements ?? []).map((def) => (
-              <AchievementBadge
-                key={def.key}
-                achievement={def}
-                locked={!earnedKeys.has(def.key)}
-              />
-            ))}
-          </div>
         </CardContent>
       </Card>
     </div>

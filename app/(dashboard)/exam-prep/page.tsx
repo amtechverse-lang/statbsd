@@ -28,7 +28,7 @@ export default function ExamPrepPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold">Exam Preparation</h1>
-        <p className="text-muted-foreground">3 full mock exams with timed practice and weakness analysis</p>
+        <p className="text-muted-foreground">Timed mock exams using real exam-style problems</p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-3">
@@ -64,7 +64,10 @@ export default function ExamPrepPage() {
             <Link href="/tools/z-table">Z-Table Visualizer</Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href="/modules/exam-prep">Exam Strategy Lessons</Link>
+            <Link href="/practice">Practice by topic</Link>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link href="/revise">Quick revision</Link>
           </Button>
         </CardContent>
       </Card>

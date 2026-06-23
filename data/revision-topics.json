@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hypergeometric",
+    "title": "Hypergeometric",
+    "icon": "🎯",
+    "questionTopic": "Hypergeometric",
+    "summary": "Sampling without replacement from a finite population.",
+    "content": "## When to use\n\n- Fixed population size **N**\n- **K** successes in population\n- Sample **n** items **without replacement**\n- X = number of successes in sample\n\n## Formula\n\n$$P(X=x) = \\frac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}$$\n\n## Exam steps\n\n1. Identify N, K, n from the word problem\n2. Check support: max(0, n−(N−K)) ≤ x ≤ min(n, K)\n3. Plug into the formula or sum for \"at least / at most\"\n4. Do **not** use binomial unless N is huge and replacement is approximated\n\n## Common triggers\n\n\"Select from a lot/shipment/box\", \"without replacement\", \"defective items in sample\""
+  },
+  {
+    "id": "binomial",
+    "title": "Binomial",
+    "icon": "🎲",
+    "questionTopic": "Binomial",
+    "summary": "Fixed number of independent trials, same success probability.",
+    "content": "## When to use\n\n- **n** fixed trials\n- Each trial success probability **p** (constant)\n- Independent trials\n- X = number of successes\n\n## Formula\n\n$$P(X=x) = \\binom{n}{x} p^x (1-p)^{n-x}$$\n\n## Exam steps\n\n1. Confirm independent trials with fixed n\n2. Define p clearly (defect rate, recovery rate, etc.)\n3. For \"at least one\": use **1 − P(0)**\n4. For ranges: sum PMF terms or use CDF\n\n## Common triggers\n\n\"n people tested\", \"10 wells sampled\", \"each day independent with probability p\""
+  },
+  {
+    "id": "poisson",
+    "title": "Poisson",
+    "icon": "⚡",
+    "questionTopic": "Poisson",
+    "summary": "Counts of rare events over an interval.",
+    "content": "## When to use\n\n- Events in a fixed interval (time, area, length)\n- Average rate **λ** known\n- Events are rare and independent\n\n## Formula\n\n$$P(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}$$\n\n## Exam steps\n\n1. Find λ (mean count per interval)\n2. Adjust λ if interval length changes\n3. For \"more than k\": 1 − P(X ≤ k)\n4. Binomial with large n and small p can approximate Poisson (λ = np)\n\n## Common triggers\n\n\"Average per day/hour/ms\", \"accidents/outages/arrivals\", \"infrequent events\""
+  },
+  {
+    "id": "normal",
+    "title": "Normal Distribution",
+    "icon": "📈",
+    "questionTopic": "Normal",
+    "summary": "Bell curve — standardize with Z-scores.",
+    "content": "## When to use\n\n- X ~ N(μ, σ²) stated or implied\n- Continuous measurement (time, diameter, score, resistance)\n\n## Formula\n\n$$Z = \\frac{X - \\mu}{\\sigma}, \\quad P(a < X < b) = P\\left(\\frac{a-\\mu}{\\sigma} < Z < \\frac{b-\\mu}{\\sigma}\\right)$$\n\n## Exam steps\n\n1. Draw μ and shade the region\n2. Convert bounds to Z\n3. Use Z-table: Φ(z)\n4. Symmetry: P(Z < −z) = P(Z > z)\n\n## Common triggers\n\n\"Normally distributed\", \"mean and standard deviation given\", \"percentage above/between specs\""
+  },
+  {
+    "id": "continuous",
+    "title": "Continuous PDFs",
+    "icon": "∫",
+    "questionTopic": "Continuous RV",
+    "summary": "Integrate the PDF to get probabilities.",
+    "content": "## When to use\n\n- PDF f(x) given on an interval\n- Need P(a < X < b) or verify a valid density\n\n## Rules\n\n1. f(x) ≥ 0 on support\n2. ∫ f(x)dx = 1 over full support\n3. P(a < X < b) = ∫_a^b f(x)dx\n\n## Exam steps\n\n1. Check/normalize the PDF if needed\n2. Split integral if f is piecewise\n3. Integrate carefully on correct bounds\n4. Watch units (e.g. hours vs scaled units)\n\n## Common triggers\n\n\"Probability density function\", \"verify f is a density\", \"find P between two values\""
+  },
+  {
+    "id": "joint",
+    "title": "Joint Distributions",
+    "icon": "🔗",
+    "questionTopic": "Joint",
+    "summary": "Two random variables — double integrals or joint PMF tables.",
+    "content": "## When to use\n\n- Joint PDF f(x,y) or joint PMF table\n- Need P(region), marginal, or conditional probability\n\n## Key formulas\n\n- Region probability: ∫∫_R f(x,y) dx dy\n- Marginal: f_X(x) = ∫ f(x,y) dy\n- Conditional: f(y|x) = f(x,y) / f_X(x)\n\n## Exam steps\n\n1. Sketch the support region\n2. Set integration limits from the region\n3. Integrate inner variable first\n4. For P(X < Y), integrate over {x < y}\n\n## Common triggers\n\n\"Joint density\", \"f(x,y) = …\", \"cordials/creams weight\", \"covariance setup\""
+  },
+  {
+    "id": "variance",
+    "title": "Variance & Covariance",
+    "icon": "σ²",
+    "questionTopic": "Variance",
+    "summary": "E(X), Var(X), Cov(X,Y), and correlation.",
+    "content": "## Key formulas\n\n- E(X) = Σ x·P(X=x)\n- Var(X) = E(X²) − [E(X)]²\n- Cov(X,Y) = E(XY) − E(X)E(Y)\n- ρ = Cov(X,Y) / (σ_X σ_Y)\n\n## Exam steps\n\n1. Build distribution table if discrete\n2. Compute E(X) and E(X²) separately\n3. For Cov: find E(XY) from joint table — only nonzero xy cells matter\n4. Correlation: divide by standard deviations\n\n## Common triggers\n\n\"Find variance\", \"covariance\", \"correlation coefficient\", joint PMF table given"
+  }
+]

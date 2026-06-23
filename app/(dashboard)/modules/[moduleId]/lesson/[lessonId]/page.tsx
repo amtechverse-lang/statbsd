@@ -1,34 +1,26 @@
-import { notFound } from "next/navigation";
-import { getLesson, getModule } from "@/lib/content";
-import { LessonViewer } from "@/components/modules/LessonViewer";
+import { redirect } from "next/navigation";
 
-export default function LessonPage({
+const MODULE_TO_TOPIC: Record<string, string> = {
+  foundations: "binomial",
+  "random-variables": "variance",
+  "discrete-distributions": "binomial",
+  "continuous-distributions": "continuous",
+  "discrete-uniform": "continuous",
+  "binomial-distribution": "binomial",
+  "hypergeometric-distribution": "hypergeometric",
+  "geometric-distribution": "binomial",
+  "poisson-distribution": "poisson",
+  "joint-distributions": "joint",
+  "normal-distribution": "normal",
+  "normal-applications": "normal",
+  "exam-prep": "binomial",
+};
+
+export default function LessonRedirect({
   params,
 }: {
   params: { moduleId: string; lessonId: string };
 }) {
-  const lesson = getLesson(params.moduleId, params.lessonId);
-  if (!lesson) notFound();
-
-  const mod = getModule(params.moduleId)!;
-  const allLessons = mod.lessons.map((l) => ({ slug: l.slug, title: l.title, order: l.order }));
-  const currentIdx = allLessons.findIndex((l) => l.slug === params.lessonId);
-  const prev = currentIdx > 0 ? allLessons[currentIdx - 1] : null;
-  const next = currentIdx < allLessons.length - 1 ? allLessons[currentIdx + 1] : null;
-
-  return (
-    <LessonViewer
-      lesson={{
-        id: lesson.id,
-        title: lesson.title,
-        content: lesson.content,
-        moduleId: lesson.moduleId,
-        moduleTitle: lesson.moduleTitle,
-        moduleOrder: lesson.moduleOrder,
-        order: lesson.order,
-      }}
-      prev={prev}
-      next={next}
-    />
-  );
+  const topic = MODULE_TO_TOPIC[params.moduleId] ?? "binomial";
+  redirect(`/revise/${topic}`);
 }
