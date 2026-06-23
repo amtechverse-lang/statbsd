@@ -60,7 +60,9 @@ export function StepByStepSolution({ steps, finalAnswer, commonMistakes }: StepB
           <CardContent>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               {commonMistakes.map((m, i) => (
-                <li key={i}>{m}</li>
+                <li key={i}>
+                  <MathRenderer content={m} className="text-sm prose-sm inline" />
+                </li>
               ))}
             </ul>
           </CardContent>

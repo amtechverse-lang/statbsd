@@ -6,7 +6,6 @@ import {
   GraduationCap,
   Home,
   BookOpen,
-  PenLine,
   ClipboardList,
   Wrench,
   Menu,
@@ -18,11 +17,17 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/practice", label: "Practice", icon: PenLine, match: "/practice" },
-  { href: "/revise", label: "Revise", icon: BookOpen, match: "/revise" },
-  { href: "/exam-prep", label: "Mock Exam", icon: ClipboardList, match: "/exam-prep" },
-  { href: "/tools", label: "Tools", icon: Wrench, match: "/tools" },
+  { href: "/topics", label: "Topics", icon: BookOpen, match: ["/topics", "/section", "/learn"] },
+  { href: "/exam-prep", label: "Mock Exam", icon: ClipboardList, match: ["/exam-prep"] },
+  { href: "/tools", label: "Tools", icon: Wrench, match: ["/tools"] },
 ];
+
+function isActive(pathname: string, item: (typeof navItems)[number]) {
+  if (item.match) {
+    return item.match.some((m) => pathname === m || pathname.startsWith(m + "/"));
+  }
+  return pathname === item.href;
+}
 
 export function DashboardNav() {
   const pathname = usePathname();
@@ -39,7 +44,7 @@ export function DashboardNav() {
 
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => {
-              const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
+              const active = isActive(pathname, item);
               return (
                 <Link
                   key={item.href}
@@ -64,7 +69,7 @@ export function DashboardNav() {
         {mobileOpen && (
           <nav className="md:hidden border-t p-4 space-y-1">
             {navItems.map((item) => {
-              const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
+              const active = isActive(pathname, item);
               return (
                 <Link
                   key={item.href}
@@ -86,7 +91,7 @@ export function DashboardNav() {
 
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background flex justify-around py-2">
         {navItems.map((item) => {
-          const active = item.match ? pathname.startsWith(item.match) : pathname === item.href;
+          const active = isActive(pathname, item);
           return (
             <Link key={item.href} href={item.href} className={cn("flex flex-col items-center p-1 text-xs", active ? "text-primary" : "text-muted-foreground")}>
               <item.icon className="h-5 w-5" />

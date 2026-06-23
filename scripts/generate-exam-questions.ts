@@ -3,11 +3,41 @@ import * as path from "path";
 import type { QuestionData } from "../lib/types";
 
 function q(partial: QuestionData): QuestionData {
-  return {
+  const tagged = tagQuestion({
     ...partial,
     type: "ProblemSolving",
     tags: ["exam-style", "important"],
-  };
+  } as QuestionData);
+  return tagged;
+}
+
+function tagQuestion(question: QuestionData): QuestionData {
+  const topic = question.topic.toLowerCase();
+  let sectionId = question.sectionId;
+  let lessonId = question.lessonId;
+
+  if (!lessonId) {
+    if (topic.includes("hypergeometric")) lessonId = "hypergeometric";
+    else if (topic.includes("poisson")) lessonId = "poisson";
+    else if (topic.includes("binomial")) lessonId = "binomial";
+    else if (topic.includes("normal")) lessonId = "normal";
+    else if (topic.includes("continuous")) lessonId = "continuous";
+    else if (topic.includes("joint")) lessonId = "joint";
+    else if (
+      topic.includes("variance") ||
+      topic.includes("covariance") ||
+      topic.includes("correlation")
+    )
+      lessonId = "variance";
+  }
+
+  if (!sectionId && lessonId) {
+    if (["hypergeometric", "binomial", "poisson"].includes(lessonId)) sectionId = "section-2";
+    else if (lessonId === "normal") sectionId = "section-3";
+    else sectionId = "section-1";
+  }
+
+  return { ...question, sectionId, lessonId };
 }
 
 function steps(
@@ -439,13 +469,19 @@ if (fs.existsSync(basePath)) {
   );
 }
 
-const merged = [...base, ...EXTRA];
+const merged = [...base, ...EXTRA].map(tagQuestion);
 const seen = new Set<string>();
 const unique = merged.filter((q) => {
   if (seen.has(q.id)) return false;
   seen.add(q.id);
   return true;
 });
+
+const lessonCounts: Record<string, number> = {};
+for (const q of unique) {
+  if (q.lessonId) lessonCounts[q.lessonId] = (lessonCounts[q.lessonId] ?? 0) + 1;
+}
+console.log("Questions per lesson:", lessonCounts);
 
 fs.writeFileSync(outPath, JSON.stringify(unique, null, 2));
 console.log(`Wrote ${unique.length} exam-style questions to ${outPath}`);

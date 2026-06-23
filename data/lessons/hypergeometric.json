@@ -1,0 +1,64 @@
+{
+  "id": "hypergeometric",
+  "sectionId": "section-2",
+  "title": "Hypergeometric Distribution",
+  "icon": "🎴",
+  "summary": "Count successes when sampling without replacement from a finite lot.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "Sampling without replacement",
+      "content": "## Story\n\nA box has **20 laptops**, **3 are defective**. You buy **2** without putting any back. How many defectives might you get?\n\nThis is **not** binomial — each draw changes the odds for the next.\n\n**Hypergeometric** models: finite population $N$, $K$ successes, sample size $n$, **no replacement**."
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "The PMF",
+      "content": "Let $X$ = number of successes in $n$ draws:\n\n$$P(X = x) = \\frac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}$$\n\n**Notation:** $X \\sim \\text{Hyp}(N, K, n)$\n\n**Valid $x$:** $\\max(0, n-(N-K)) \\leq x \\leq \\min(n, K)$"
+    },
+    {
+      "id": "s3",
+      "type": "whenToUse",
+      "title": "Hypergeometric vs Binomial",
+      "content": "| Situation | Distribution |\n|---|---|\n| Draw **without** replacement, finite $N$ | **Hypergeometric** |\n| **Independent** trials, fixed $p$ | **Binomial** |\n| Rare events in interval | **Poisson** |\n\n**Exam phrase:** \"randomly selected without replacement\" → hypergeometric"
+    },
+    {
+      "id": "s4",
+      "type": "formula",
+      "title": "Mean and variance",
+      "content": "$$E(X) = n \\cdot \\frac{K}{N}$$\n\n$$\\text{Var}(X) = n \\cdot \\frac{K}{N} \\cdot \\frac{N-K}{N} \\cdot \\frac{N-n}{N-1}$$\n\nWhen $N$ is large, hypergeometric ≈ binomial with $p = K/N$."
+    },
+    {
+      "id": "s5",
+      "type": "tip",
+      "title": "Which distribution?",
+      "content": "**Decision card for Section 2:**\n\n- \"Without replacement\" from finite lot → **Hypergeometric**\n- Fixed $n$ trials, same $p$ each time → **Binomial**\n- Events per hour/day, $\\lambda$ given → **Poisson**"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Example 3.8",
+      "problem": "A shipment of 20 laptops contains 3 defectives. A school randomly purchases 2 laptops **without replacement**. Find $P(X=0)$, $P(X=1)$, and $P(X=2)$ where $X$ = number of defectives.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Identify parameters",
+          "content": "$N=20$, $K=3$ defectives, $n=2$ sampled.\n\n$X \\sim \\text{Hyp}(20, 3, 2)$"
+        },
+        {
+          "step": 2,
+          "title": "$P(X=0)$ — both good",
+          "content": "$$P(X=0) = \\frac{\\binom{3}{0}\\binom{17}{2}}{\\binom{20}{2}} = \\frac{136}{190} \\approx 0.716$$"
+        },
+        {
+          "step": 3,
+          "title": "$P(X=1)$ and $P(X=2)$",
+          "content": "$$P(X=1) = \\frac{\\binom{3}{1}\\binom{17}{1}}{\\binom{20}{2}} = \\frac{51}{190} \\approx 0.268$$\n\n$$P(X=2) = \\frac{\\binom{3}{2}\\binom{17}{0}}{\\binom{20}{2}} = \\frac{3}{190} \\approx 0.016$$"
+        }
+      ],
+      "finalAnswer": "$P(0) \\approx 0.716$, $P(1) \\approx 0.268$, $P(2) \\approx 0.016$"
+    }
+  ]
+}

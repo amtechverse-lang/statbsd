@@ -1,0 +1,71 @@
+[
+  {
+    "id": "section-1",
+    "title": "Chapters 3 & 4",
+    "description": "Continuous PDFs, joint distributions, variance and covariance",
+    "examQuestions": "Q1–Q3 (20 marks)",
+    "chapters": "3, 4",
+    "subtopics": [
+      {
+        "id": "continuous",
+        "title": "Continuous PDF",
+        "icon": "📈",
+        "description": "Density functions, integration, and probabilities on intervals"
+      },
+      {
+        "id": "joint",
+        "title": "Joint Distributions",
+        "icon": "🔗",
+        "description": "Joint PDFs, marginal and conditional distributions"
+      },
+      {
+        "id": "variance",
+        "title": "Variance & Covariance",
+        "icon": "📊",
+        "description": "Expectation, variance, covariance, and correlation"
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "title": "Chapters 4 & 5",
+    "description": "Discrete distributions: hypergeometric, binomial, and Poisson",
+    "examQuestions": "Q4–Q6 (15 marks)",
+    "chapters": "4, 5",
+    "subtopics": [
+      {
+        "id": "hypergeometric",
+        "title": "Hypergeometric",
+        "icon": "🎴",
+        "description": "Sampling without replacement from a finite population"
+      },
+      {
+        "id": "binomial",
+        "title": "Binomial",
+        "icon": "🎯",
+        "description": "Fixed trials with constant success probability"
+      },
+      {
+        "id": "poisson",
+        "title": "Poisson",
+        "icon": "⚡",
+        "description": "Rare events over time or space"
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "title": "Chapter 6",
+    "description": "Normal distribution applications and z-scores",
+    "examQuestions": "Q7–Q9 (15 marks)",
+    "chapters": "6",
+    "subtopics": [
+      {
+        "id": "normal",
+        "title": "Normal Distribution",
+        "icon": "🔔",
+        "description": "Bell curve, z-scores, and real-world applications"
+      }
+    ]
+  }
+]

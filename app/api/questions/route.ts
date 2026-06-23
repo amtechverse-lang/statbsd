@@ -20,6 +20,8 @@ export async function GET(request: Request) {
     tag: searchParams.get("tag") ?? undefined,
     topic: searchParams.get("topic") ?? undefined,
     revisionTopic: searchParams.get("revisionTopic") ?? undefined,
+    lessonId: searchParams.get("lessonId") ?? undefined,
+    sectionId: searchParams.get("sectionId") ?? undefined,
     examOnly,
   });
 

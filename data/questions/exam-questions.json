@@ -49,7 +49,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "imp_002",
@@ -88,7 +90,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "imp_003",
@@ -124,7 +128,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "imp_004",
@@ -160,7 +166,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "imp_005",
@@ -196,7 +204,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "joint"
   },
   {
     "id": "imp_006",
@@ -232,7 +242,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "joint"
   },
   {
     "id": "imp_007",
@@ -268,7 +280,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "joint"
   },
   {
     "id": "imp_008",
@@ -312,7 +326,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "imp_009",
@@ -354,7 +370,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "imp_010",
@@ -390,7 +408,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "imp_011",
@@ -426,7 +446,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "imp_012",
@@ -462,7 +484,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "imp_013",
@@ -504,7 +528,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "imp_014",
@@ -540,7 +566,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "imp_015",
@@ -576,7 +604,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "imp_016",
@@ -612,7 +642,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "imp_017",
@@ -642,7 +674,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "imp_018",
@@ -678,7 +712,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "imp_019",
@@ -708,7 +744,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "imp_020",
@@ -738,7 +776,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "imp_021",
@@ -780,7 +820,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "imp_022a",
@@ -818,7 +860,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "imp_022b",
@@ -854,7 +898,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "imp_023",
@@ -890,7 +936,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_024",
@@ -926,7 +974,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_025",
@@ -961,7 +1011,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_026",
@@ -996,7 +1048,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_027",
@@ -1032,7 +1086,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_028",
@@ -1068,7 +1124,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_029",
@@ -1104,7 +1162,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "imp_030",
@@ -1140,7 +1200,9 @@
     "tags": [
       "important",
       "exam-style"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "exam_h_004",
@@ -1172,7 +1234,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "exam_h_005",
@@ -1202,7 +1266,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "exam_h_006",
@@ -1232,7 +1298,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "exam_h_007",
@@ -1262,7 +1330,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "hypergeometric"
   },
   {
     "id": "exam_b_004",
@@ -1292,7 +1362,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "exam_b_005",
@@ -1322,7 +1394,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "exam_b_006",
@@ -1352,7 +1426,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "exam_b_007",
@@ -1382,7 +1458,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "binomial"
   },
   {
     "id": "exam_p_004",
@@ -1412,7 +1490,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "exam_p_005",
@@ -1442,7 +1522,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "exam_p_006",
@@ -1472,7 +1554,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "exam_p_007",
@@ -1504,7 +1588,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   },
   {
     "id": "exam_n_007",
@@ -1533,7 +1619,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "exam_n_008",
@@ -1562,7 +1650,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "exam_n_009",
@@ -1592,7 +1682,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "exam_n_010",
@@ -1622,7 +1714,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-3",
+    "lessonId": "normal"
   },
   {
     "id": "exam_c_004",
@@ -1652,7 +1746,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "exam_c_005",
@@ -1688,7 +1784,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "exam_c_006",
@@ -1718,7 +1816,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "continuous"
   },
   {
     "id": "exam_j_003",
@@ -1748,7 +1848,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "joint"
   },
   {
     "id": "exam_j_004",
@@ -1778,7 +1880,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "joint"
   },
   {
     "id": "exam_j_005",
@@ -1809,7 +1913,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "exam_v_002",
@@ -1845,7 +1951,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "exam_v_003",
@@ -1874,7 +1982,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "exam_v_004",
@@ -1903,7 +2013,9 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-1",
+    "lessonId": "variance"
   },
   {
     "id": "exam_pb_003",
@@ -1939,6 +2051,8 @@
     "tags": [
       "exam-style",
       "important"
-    ]
+    ],
+    "sectionId": "section-2",
+    "lessonId": "poisson"
   }
 ]

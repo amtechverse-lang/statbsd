@@ -1,0 +1,77 @@
+{
+  "id": "normal",
+  "sectionId": "section-3",
+  "title": "Normal Distribution",
+  "icon": "🔔",
+  "summary": "Use the bell curve and z-scores for real-world measurements.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "The bell curve",
+      "content": "## Story\n\nHeights of students, exam scores, measurement errors — many real quantities cluster around a **mean** with a symmetric bell shape.\n\n**Normal** distribution: $X \\sim N(\\mu, \\sigma^2)$\n\n- $\\mu$ = center (mean)\n- $\\sigma$ = spread (standard deviation)\n- Symmetric, unimodal, tails extend forever"
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "Standardizing with z-scores",
+      "content": "Convert any normal to **standard normal** $Z \\sim N(0,1)$:\n\n$$Z = \\frac{X - \\mu}{\\sigma}$$\n\nThen use the **z-table**:\n\n$$P(X < a) = P\\left(Z < \\frac{a - \\mu}{\\sigma}\\right)$$\n\n**Key:** $P(Z < -z) = 1 - P(Z < z)$ by symmetry."
+    },
+    {
+      "id": "s3",
+      "type": "whenToUse",
+      "title": "Exam applications",
+      "content": "Normal distribution appears when:\n\n- Scores/grades are approximately normal\n- Sample means (Central Limit Theorem)\n- Measurement with given $\\mu$ and $\\sigma$\n\n**Steps:** (1) Draw sketch (2) Standardize (3) Look up z-table (4) Use symmetry/complements"
+    },
+    {
+      "id": "s4",
+      "type": "formula",
+      "title": "Between two values",
+      "content": "$$P(a < X < b) = P\\left(\\frac{a-\\mu}{\\sigma} < Z < \\frac{b-\\mu}{\\sigma}\\right)$$\n\n$$= \\Phi(z_b) - \\Phi(z_a)$$\n\nwhere $\\Phi$ is the standard normal CDF from the z-table."
+    },
+    {
+      "id": "s5",
+      "type": "tip",
+      "title": "Common mistakes",
+      "content": "- Use **$\\sigma$** in the denominator, not $\\sigma^2$\n- \"Above 80\" means $P(X > 80) = 1 - P(X < 80)$\n- Shade the region on your sketch before looking up values\n\n**Tool:** Use the built-in z-table at `/tools/z-table`"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Exam scores",
+      "problem": "Test scores are $N(70, 100)$ (i.e. $\\mu=70$, $\\sigma=10$). Find the probability a student scores above 85.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "$$z = \\frac{85 - 70}{10} = 1.5$$"
+        },
+        {
+          "step": 2,
+          "title": "Use z-table",
+          "content": "$P(X > 85) = P(Z > 1.5) = 1 - P(Z < 1.5)$\n\nFrom z-table: $P(Z < 1.5) \\approx 0.9332$\n\nSo $P(X > 85) \\approx 0.0668$"
+        }
+      ],
+      "finalAnswer": "$P(X > 85) \\approx 0.067$ (about 6.7%)"
+    },
+    {
+      "id": "ex2",
+      "source": "Between two values",
+      "problem": "Weights are $N(50, 25)$ kg ($\\sigma=5$). Find $P(45 < X < 55)$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z-scores",
+          "content": "$$z_1 = \\frac{45-50}{5} = -1, \\quad z_2 = \\frac{55-50}{5} = 1$$"
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "$$P(-1 < Z < 1) = 0.8413 - 0.1587 = 0.6826$$\n\nAbout 68% within one standard deviation."
+        }
+      ],
+      "finalAnswer": "$P(45 < X < 55) \\approx 0.683$"
+    }
+  ]
+}

@@ -21,6 +21,8 @@ export interface McqOption {
 export interface QuestionData {
   id: string;
   moduleId: string;
+  sectionId?: string;
+  lessonId?: string;
   topic: string;
   subtopic: string;
   difficulty: "Easy" | "Medium" | "Hard";
@@ -67,6 +69,55 @@ export interface RevisionTopic {
   questionTopic: string;
   summary: string;
   content: string;
+}
+
+export interface ExamSubtopic {
+  id: string;
+  title: string;
+  icon: string;
+  description: string;
+}
+
+export interface ExamSection {
+  id: string;
+  title: string;
+  description: string;
+  examQuestions: string;
+  chapters: string;
+  subtopics: ExamSubtopic[];
+}
+
+export type LessonSlideType = "concept" | "formula" | "whenToUse" | "tip" | "diagram";
+
+export interface LessonSlide {
+  id: string;
+  type: LessonSlideType;
+  title: string;
+  content: string;
+}
+
+export interface WorkedExampleStep {
+  step: number;
+  title: string;
+  content: string;
+}
+
+export interface WorkedExample {
+  id: string;
+  source: string;
+  problem: string;
+  steps: WorkedExampleStep[];
+  finalAnswer: string;
+}
+
+export interface TopicLesson {
+  id: string;
+  sectionId: string;
+  title: string;
+  icon: string;
+  summary: string;
+  slides: LessonSlide[];
+  workedExamples: WorkedExample[];
 }
 
 export interface ProgressSummary {

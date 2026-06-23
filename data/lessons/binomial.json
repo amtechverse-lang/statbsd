@@ -1,0 +1,72 @@
+{
+  "id": "binomial",
+  "sectionId": "section-2",
+  "title": "Binomial Distribution",
+  "icon": "🎯",
+  "summary": "Count successes in a fixed number of independent trials.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "What is a trial?",
+      "content": "## Story\n\nYou flip a coin **10 times**. Each flip is a **trial** with two outcomes: success (heads) or failure (tails).\n\n**Binomial** counts how many successes in $n$ **independent** trials, each with the same probability $p$.\n\n**Conditions (BINS):**\n- **B**inary outcomes (success/failure)\n- **I**ndependent trials\n- **N**umber of trials $n$ is fixed\n- **S**ame probability $p$ each trial"
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "The formula",
+      "content": "$$P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}$$\n\n**Notation:** $X \\sim B(n, p)$\n\n$$E(X) = np, \\quad \\text{Var}(X) = np(1-p)$$\n\n**At least / at most:** use complement or sum PMF terms."
+    },
+    {
+      "id": "s3",
+      "type": "whenToUse",
+      "title": "When to use binomial",
+      "content": "Use binomial when:\n\n- You repeat the same experiment $n$ times\n- Each trial is independent\n- Success probability $p$ stays constant\n\n**Not binomial:** sampling without replacement from small population → use hypergeometric"
+    },
+    {
+      "id": "s4",
+      "type": "tip",
+      "title": "Which distribution?",
+      "content": "**Section 2 decision card:**\n\n- Without replacement, finite lot → **Hypergeometric**\n- $n$ independent trials, fixed $p$ → **Binomial**\n- Rare events per interval, $\\lambda$ known → **Poisson**"
+    },
+    {
+      "id": "s5",
+      "type": "concept",
+      "title": "Ready to practice",
+      "content": "You can now:\n\n- Check BINS conditions\n- Apply $P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}$\n- Use $E(X)=np$ and complements for \"at least\" problems\n\nNext: worked examples, then exam questions."
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Example 5.2 style",
+      "problem": "A machine produces items with a 5% defect rate. If 8 items are inspected **independently**, find $P(\\text{exactly 2 defectives})$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Identify distribution",
+          "content": "$n=8$ independent trials, $p=0.05$.\n\n$X \\sim B(8, 0.05)$, find $P(X=2)$."
+        },
+        {
+          "step": 2,
+          "title": "Apply PMF",
+          "content": "$$P(X=2) = \\binom{8}{2}(0.05)^2(0.95)^6$$\n\n$$= 28 \\times 0.0025 \\times 0.7351 \\approx 0.051$$"
+        }
+      ],
+      "finalAnswer": "$P(X=2) \\approx 0.051$"
+    },
+    {
+      "id": "ex2",
+      "source": "At least one success",
+      "problem": "If $p=0.1$ and $n=5$, find $P(X \\geq 1)$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Use complement",
+          "content": "$$P(X \\geq 1) = 1 - P(X=0) = 1 - (0.9)^5$$\n\n$$= 1 - 0.59049 = 0.40951$$"
+        }
+      ],
+      "finalAnswer": "$P(X \\geq 1) \\approx 0.41$"
+    }
+  ]
+}

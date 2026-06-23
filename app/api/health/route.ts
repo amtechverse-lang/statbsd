@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getExamPracticeQuestions, getRevisionTopics } from "@/lib/content";
+import { getExamPracticeQuestions, getExamSections, getLessonIds } from "@/lib/content";
 
 export async function GET() {
   const exam = getExamPracticeQuestions();
@@ -7,7 +7,8 @@ export async function GET() {
     status: "ok",
     mode: "exam-prep",
     database: false,
-    revisionTopics: getRevisionTopics().length,
+    examSections: getExamSections().length,
+    lessons: getLessonIds().length,
     examQuestions: exam.length,
   });
 }

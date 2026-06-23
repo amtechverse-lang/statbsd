@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
+import { MathRenderer } from "@/components/shared/MathRenderer";
 import { Lightbulb } from "lucide-react";
 
 export function HintPanel({ hints, revealed }: { hints: string[]; revealed: number }) {
@@ -13,9 +14,11 @@ export function HintPanel({ hints, revealed }: { hints: string[]; revealed: numb
           <Lightbulb className="h-4 w-4" />
           <span className="font-semibold text-sm">Hint {revealed} of {hints.length}</span>
         </div>
-        <ul className="space-y-1">
+        <ul className="space-y-2">
           {visibleHints.map((hint, i) => (
-            <li key={i} className="text-sm">{hint}</li>
+            <li key={i}>
+              <MathRenderer content={hint} className="text-sm prose-sm" />
+            </li>
           ))}
         </ul>
       </CardContent>

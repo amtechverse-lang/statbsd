@@ -1,0 +1,59 @@
+{
+  "id": "joint",
+  "sectionId": "section-1",
+  "title": "Joint Distributions",
+  "icon": "🔗",
+  "summary": "Work with two random variables together — joint, marginal, and conditional PDFs.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "Two variables at once",
+      "content": "## Story\n\nA factory tracks **temperature** $X$ and **defect rate** $Y$. We need probabilities involving **both** at the same time.\n\nA **joint PDF** $f(x,y)$ describes how probability is spread over pairs $(x,y)$.\n\n**Valid joint PDF:**\n- $f(x,y) \\geq 0$\n- $\\iint f(x,y)\\,dx\\,dy = 1$ over the support"
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "Marginal PDF",
+      "content": "To find the distribution of **just $X$** (ignoring $Y$), integrate out $y$:\n\n$$f_X(x) = \\int f(x,y)\\,dy$$\n\nSimilarly:\n\n$$f_Y(y) = \\int f(x,y)\\,dx$$\n\n**Probability:**\n\n$$P(X \\in A, Y \\in B) = \\iint_{A \\times B} f(x,y)\\,dx\\,dy$$"
+    },
+    {
+      "id": "s3",
+      "type": "formula",
+      "title": "Conditional PDF",
+      "content": "Given $Y = y$, the **conditional PDF** of $X$ is:\n\n$$f_{X|Y}(x|y) = \\frac{f(x,y)}{f_Y(y)} \\quad \\text{(when } f_Y(y) > 0\\text{)}$$\n\n**Think:** slice the joint density at fixed $y$, then rescale so the slice integrates to 1."
+    },
+    {
+      "id": "s4",
+      "type": "whenToUse",
+      "title": "Independence check",
+      "content": "$X$ and $Y$ are **independent** if:\n\n$$f(x,y) = f_X(x) \\cdot f_Y(y)$$\n\n**Exam tip:** If you can factor the joint PDF into a function of $x$ times a function of $y$, they're independent."
+    },
+    {
+      "id": "s5",
+      "type": "tip",
+      "title": "Integration order",
+      "content": "Draw the **support region** first. Choose integration limits carefully:\n\n- Fix $x$, integrate $y$ from lower boundary to upper boundary of the region\n- Or swap order if easier\n\n**Common mistake:** using wrong limits when the region is a triangle or slanted band."
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Joint PDF on a rectangle",
+      "problem": "Let $f(x,y) = 6xy$ for $0 < x < 1$, $0 < y < 1$, and $0$ elsewhere.\n\nFind $P(X < 0.5, Y < 0.5)$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Set up the double integral",
+          "content": "$$P(X < 0.5, Y < 0.5) = \\int_0^{0.5} \\int_0^{0.5} 6xy\\,dy\\,dx$$"
+        },
+        {
+          "step": 2,
+          "title": "Integrate",
+          "content": "Inner integral: $\\int_0^{0.5} 6xy\\,dy = 6x \\cdot \\frac{y^2}{2}\\Big|_0^{0.5} = \\frac{3x}{4}$\n\nOuter: $\\int_0^{0.5} \\frac{3x}{4}\\,dx = \\frac{3}{4} \\cdot \\frac{x^2}{2}\\Big|_0^{0.5} = \\frac{3}{32}$"
+        }
+      ],
+      "finalAnswer": "$P = \\frac{3}{32} \\approx 0.094$"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "poisson",
+  "sectionId": "section-2",
+  "title": "Poisson Distribution",
+  "icon": "⚡",
+  "summary": "Model rare events happening over time or space.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "Counting rare events",
+      "content": "## Story\n\nA call center gets about **4 calls per hour** on average. How many calls in the next hour? Could be 0, 1, 2, …\n\n**Poisson** models the number of events in a fixed interval when:\n- Events happen independently\n- Average rate $\\lambda$ is known\n- Events are rare in small sub-intervals"
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "The PMF",
+      "content": "$$P(X = k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}, \\quad k = 0, 1, 2, \\ldots$$\n\n**Notation:** $X \\sim \\text{Poisson}(\\lambda)$\n\n$$E(X) = \\lambda, \\quad \\text{Var}(X) = \\lambda$$\n\n**Scaling:** If rate is $\\lambda$ per hour and you want 30 minutes, use $\\lambda/2$."
+    },
+    {
+      "id": "s3",
+      "type": "whenToUse",
+      "title": "Poisson vs Binomial",
+      "content": "| Situation | Distribution |\n|---|---|\n| Rare events per time/area | **Poisson** |\n| Fixed $n$ trials, prob $p$ | **Binomial** |\n| Large $n$, small $p$, $np \\approx \\lambda$ | Poisson **approximates** binomial |\n\n**Exam phrase:** \"average of X per hour/day\" → Poisson"
+    },
+    {
+      "id": "s4",
+      "type": "tip",
+      "title": "Adjusting $\\lambda$",
+      "content": "If the problem changes the **time window**, scale $\\lambda$ proportionally:\n\n- 4 calls/hour → 2 calls in 30 min: $\\lambda = 2$\n- 12 defects per 100 items → 3 items inspected: $\\lambda = 0.36$\n\nAlways match $\\lambda$ to the interval you're counting over."
+    },
+    {
+      "id": "s5",
+      "type": "concept",
+      "title": "Which distribution?",
+      "content": "**Section 2 recap:**\n\n- Without replacement → **Hypergeometric**\n- $n$ trials, fixed $p$ → **Binomial**\n- Events per interval → **Poisson**"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Call center",
+      "problem": "Calls arrive at an average rate of 6 per hour. Find $P(\\text{exactly 4 calls in 1 hour})$ and $P(\\text{at most 2})$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Setup",
+          "content": "$X \\sim \\text{Poisson}(6)$"
+        },
+        {
+          "step": 2,
+          "title": "$P(X=4)$",
+          "content": "$$P(X=4) = \\frac{e^{-6} \\cdot 6^4}{4!} \\approx 0.133$$"
+        },
+        {
+          "step": 3,
+          "title": "$P(X \\leq 2)$",
+          "content": "$$P(X \\leq 2) = P(0) + P(1) + P(2)$$\n\n$\\approx 0.0025 + 0.0149 + 0.0446 = 0.062$"
+        }
+      ],
+      "finalAnswer": "$P(X=4) \\approx 0.133$, $P(X \\leq 2) \\approx 0.062$"
+    }
+  ]
+}

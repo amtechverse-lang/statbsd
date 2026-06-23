@@ -1,0 +1,77 @@
+{
+  "id": "continuous",
+  "sectionId": "section-1",
+  "title": "Continuous Random Variables",
+  "icon": "📈",
+  "summary": "Use PDFs and integration to find probabilities on intervals.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "What is a continuous RV?",
+      "content": "## Story first\n\nImagine measuring the **exact weight** of a bag of rice. It could be 1.002 kg, 1.0023 kg, or any value in a range — not just whole numbers.\n\nA **continuous random variable** $X$ takes uncountably many values on an interval.\n\n**Key idea:** We describe it with a **probability density function (PDF)** $f(x)$, not a table of probabilities."
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "Rules of a valid PDF",
+      "content": "A function $f(x)$ is a valid PDF if:\n\n1. $f(x) \\geq 0$ for all $x$\n2. The total area under the curve equals 1:\n\n$$\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1$$\n\n**Probability on an interval:**\n\n$$P(a < X < b) = \\int_a^b f(x)\\,dx$$\n\nFor continuous RVs, $P(X = a) = 0$ — only intervals matter."
+    },
+    {
+      "id": "s3",
+      "type": "whenToUse",
+      "title": "When to integrate",
+      "content": "## Exam checklist\n\n- **Given $f(x)$** → integrate over the interval asked\n- **Find constant $c$** → set $\\int f(x)\\,dx = 1$ and solve for $c$\n- **Find $P(X > a)$** → integrate from $a$ to the upper limit of support\n\n**Example support:** If $f(x) = kx$ only on $0 < x < 2$, integrate from 0 to 2, not $-\\infty$ to $\\infty$."
+    },
+    {
+      "id": "s4",
+      "type": "tip",
+      "title": "Common exam traps",
+      "content": "- Always check **where $f(x) = 0$** outside the support\n- Units: area under PDF = probability (not height)\n- If $\\int f(x)\\,dx \\neq 1$, you may need to **divide $f$ by that integral** to normalize\n\n**Quick check:** After finding $c$, plug back and verify the integral equals 1."
+    },
+    {
+      "id": "s5",
+      "type": "concept",
+      "title": "Ready for examples",
+      "content": "You now know:\n\n- Continuous RVs use PDFs\n- Probabilities = areas = integrals\n- Total area must equal 1\n\nNext: worked examples from your textbook style, then exam practice."
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Example 3.11 style",
+      "problem": "A continuous RV $X$ has PDF $f(x) = \\frac{x}{2}$ for $0 < x < 2$, and $0$ elsewhere.\n\n(a) Verify this is a valid density.\n(b) Find $P(0 < X < 1)$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Verify total area = 1",
+          "content": "$$\\int_0^2 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_0^2 = \\frac{4}{4} = 1$$\n\nAlso $f(x) \\geq 0$ on $(0,2)$. ✓ Valid PDF."
+        },
+        {
+          "step": 2,
+          "title": "Integrate over the interval",
+          "content": "$$P(0 < X < 1) = \\int_0^1 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_0^1 = \\frac{1}{4} = 0.25$$"
+        }
+      ],
+      "finalAnswer": "$P(0 < X < 1) = 0.25$"
+    },
+    {
+      "id": "ex2",
+      "source": "Find constant $c$",
+      "problem": "Suppose $f(x) = cx^2$ for $0 \\leq x \\leq 1$, and $0$ elsewhere. Find $c$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Set integral equal to 1",
+          "content": "$$1 = \\int_0^1 cx^2\\,dx = c\\left[\\frac{x^3}{3}\\right]_0^1 = \\frac{c}{3}$$"
+        },
+        {
+          "step": 2,
+          "title": "Solve for $c$",
+          "content": "$$c = 3$$\n\nSo the PDF is $f(x) = 3x^2$ on $[0,1]$."
+        }
+      ],
+      "finalAnswer": "$c = 3$"
+    }
+  ]
+}

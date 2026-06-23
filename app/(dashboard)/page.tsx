@@ -3,17 +3,32 @@
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { useGuestProgress } from "@/lib/store/guest-progress";
 import { useEffect, useState } from "react";
-import type { RevisionTopic } from "@/lib/types";
+
+interface SectionData {
+  id: string;
+  title: string;
+  description: string;
+  examQuestions: string;
+  subtopics: {
+    id: string;
+    title: string;
+    icon: string;
+    description: string;
+    slideCount: number;
+    questionCount: number;
+  }[];
+}
 
 export default function HomePage() {
   const guest = useGuestProgress();
-  const [topics, setTopics] = useState<(RevisionTopic & { questionCount: number })[]>([]);
+  const [sections, setSections] = useState<SectionData[]>([]);
   const [totalQs, setTotalQs] = useState(0);
 
   useEffect(() => {
-    fetch("/api/revision").then((r) => r.json()).then(setTopics);
+    fetch("/api/sections").then((r) => r.json()).then(setSections);
     fetch("/api/questions?examOnly=true").then((r) => r.json()).then((q) => setTotalQs(q.length));
   }, []);
 
@@ -26,7 +41,7 @@ export default function HomePage() {
       <div>
         <h1 className="text-3xl font-bold">Exam Prep — Probability & Statistics</h1>
         <p className="text-muted-foreground mt-1">
-          Practice real exam questions, revise only what you need, skip anything you already know
+          Learn with interactive slides, work through examples, then practice exam-style questions
         </p>
       </div>
 
@@ -51,47 +66,59 @@ export default function HomePage() {
         </Card>
       </div>
 
+      <section className="space-y-6">
+        <h2 className="text-xl font-semibold">Pick an exam section</h2>
+        {sections.map((section) => (
+          <Card key={section.id}>
+            <CardHeader>
+              <div className="flex items-start justify-between gap-4 flex-wrap">
+                <div>
+                  <CardTitle>{section.title}</CardTitle>
+                  <CardDescription>{section.description}</CardDescription>
+                </div>
+                <Badge variant="outline">{section.examQuestions}</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 mb-4">
+                {section.subtopics.map((sub) => (
+                  <Link
+                    key={sub.id}
+                    href={`/learn/${sub.id}`}
+                    className="flex items-center gap-3 p-3 rounded-lg border hover:bg-muted/50 transition-colors"
+                  >
+                    <span className="text-2xl">{sub.icon}</span>
+                    <div className="min-w-0">
+                      <p className="font-medium text-sm">{sub.title}</p>
+                      <p className="text-xs text-muted-foreground">
+                        {sub.slideCount} slides · {sub.questionCount} questions
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <Button asChild variant="outline">
+                <Link href={`/section/${section.id}`}>View all sub-topics →</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
+      </section>
+
       <Card className="border-primary/30 bg-primary/5">
         <CardHeader>
-          <CardTitle>Start here</CardTitle>
-          <CardDescription>Most students go straight to practice</CardDescription>
+          <CardTitle>Ready for the full paper?</CardTitle>
+          <CardDescription>Timed mock exam with questions from all sections</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-3">
           <Button asChild size="lg">
-            <Link href="/practice">Practice exam questions</Link>
-          </Button>
-          <Button asChild variant="outline" size="lg">
             <Link href="/exam-prep">Mock exam (timed)</Link>
           </Button>
-          <Button asChild variant="outline">
-            <Link href="/revise">Quick revision notes</Link>
+          <Button asChild variant="outline" size="lg">
+            <Link href="/topics">Browse all topics</Link>
           </Button>
         </CardContent>
       </Card>
-
-      <section>
-        <h2 className="text-xl font-semibold mb-4">Pick a topic — no fixed order</h2>
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {topics.map((t) => (
-            <Card key={t.id}>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-base flex items-center gap-2">
-                  <span>{t.icon}</span> {t.title}
-                </CardTitle>
-                <CardDescription className="line-clamp-2">{t.summary}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex gap-2">
-                <Button size="sm" asChild>
-                  <Link href={`/practice?topic=${t.id}`}>Practice</Link>
-                </Button>
-                <Button size="sm" variant="ghost" asChild>
-                  <Link href={`/revise/${t.id}`}>Revise</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
 
       <Card>
         <CardHeader>

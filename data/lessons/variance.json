@@ -1,0 +1,64 @@
+{
+  "id": "variance",
+  "sectionId": "section-1",
+  "title": "Variance & Covariance",
+  "icon": "📊",
+  "summary": "Measure spread and how two variables move together.",
+  "slides": [
+    {
+      "id": "s1",
+      "type": "concept",
+      "title": "Expected value",
+      "content": "## Story\n\nThe **expected value** $E(X)$ is the long-run average — the \"balance point\" of the distribution.\n\n**Discrete:** $E(X) = \\sum x \\cdot P(X=x)$\n\n**Continuous:** $E(X) = \\int x f(x)\\,dx$\n\n**Linearity:** $E(aX + b) = aE(X) + b$"
+    },
+    {
+      "id": "s2",
+      "type": "formula",
+      "title": "Variance",
+      "content": "Variance measures **spread** around the mean:\n\n$$\\text{Var}(X) = E[(X - \\mu)^2] = E(X^2) - [E(X)]^2$$\n\n**Standard deviation:** $\\sigma = \\sqrt{\\text{Var}(X)}$\n\n**Scaling:** $\\text{Var}(aX + b) = a^2 \\text{Var}(X)$"
+    },
+    {
+      "id": "s3",
+      "type": "formula",
+      "title": "Covariance & correlation",
+      "content": "**Covariance** (how $X$ and $Y$ move together):\n\n$$\\text{Cov}(X,Y) = E[(X - \\mu_X)(Y - \\mu_Y)] = E(XY) - E(X)E(Y)$$\n\n**Correlation** (scaled to $[-1,1]$):\n\n$$\\rho = \\frac{\\text{Cov}(X,Y)}{\\sigma_X \\sigma_Y}$$\n\n- $\\rho > 0$: tend to increase together\n- $\\rho < 0$: one up, other down\n- $\\rho = 0$: no linear relationship"
+    },
+    {
+      "id": "s4",
+      "type": "whenToUse",
+      "title": "Variance of sums",
+      "content": "If $X$ and $Y$ are **independent**:\n\n$$\\text{Var}(X + Y) = \\text{Var}(X) + \\text{Var}(Y)$$\n\n**With covariance:**\n\n$$\\text{Var}(X + Y) = \\text{Var}(X) + \\text{Var}(Y) + 2\\text{Cov}(X,Y)$$\n\n**Exam:** Check independence before adding variances!"
+    },
+    {
+      "id": "s5",
+      "type": "tip",
+      "title": "Computing $E(XY)$",
+      "content": "For joint PDF $f(x,y)$:\n\n$$E(XY) = \\iint xy \\cdot f(x,y)\\,dx\\,dy$$\n\n**Shortcut for independent RVs:** $E(XY) = E(X) \\cdot E(Y)$"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "source": "Variance from PMF",
+      "problem": "Let $X$ take values 0, 1, 2 with probabilities 0.3, 0.5, 0.2. Find $\\text{Var}(X)$.",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Find $E(X)$",
+          "content": "$$E(X) = 0(0.3) + 1(0.5) + 2(0.2) = 0.9$$"
+        },
+        {
+          "step": 2,
+          "title": "Find $E(X^2)$",
+          "content": "$$E(X^2) = 0^2(0.3) + 1^2(0.5) + 2^2(0.2) = 1.3$$"
+        },
+        {
+          "step": 3,
+          "title": "Apply formula",
+          "content": "$$\\text{Var}(X) = E(X^2) - [E(X)]^2 = 1.3 - 0.81 = 0.49$$"
+        }
+      ],
+      "finalAnswer": "$\\text{Var}(X) = 0.49$, $\\sigma \\approx 0.70$"
+    }
+  ]
+}
