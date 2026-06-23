@@ -1,12 +1,11 @@
 {
   "id": "mock-exam-1",
   "name": "Mock Exam 1",
-  "description": "Mixed exam-style problems — all topics.",
+  "description": "Full mixed exam — all topics.",
   "questionIds": [
-    "imp_001", "imp_006", "imp_015", "imp_016", "imp_017", "imp_018",
-    "imp_011", "imp_013", "imp_014", "imp_019", "imp_020", "imp_021",
-    "imp_022a", "imp_022b", "imp_023", "imp_024", "imp_025", "imp_026",
-    "imp_002", "imp_003"
+    "imp_001", "imp_006", "exam_h_004", "exam_h_005", "imp_011", "imp_013", "exam_b_004", "exam_b_005",
+    "imp_019", "exam_p_004", "imp_022b", "exam_pb_003", "imp_023", "exam_n_007", "imp_025", "exam_n_009",
+    "imp_002", "exam_c_004", "imp_005", "exam_j_003", "imp_008", "exam_v_002"
   ],
   "timeLimit": 90,
   "passingScore": 60

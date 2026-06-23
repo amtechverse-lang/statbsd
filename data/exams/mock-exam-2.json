@@ -1,12 +1,12 @@
 {
   "id": "mock-exam-2",
   "name": "Mock Exam 2",
-  "description": "Distributions focus — binomial, Poisson, hypergeometric.",
+  "description": "Distributions: hypergeometric, binomial, Poisson.",
   "questionIds": [
-    "imp_011", "imp_013", "imp_014", "imp_015", "imp_016", "imp_017",
-    "imp_018", "imp_019", "imp_020", "imp_021", "imp_022a", "imp_022b",
-    "imp_001", "imp_006", "imp_008"
+    "imp_001", "imp_015", "imp_016", "imp_017", "imp_018", "exam_h_006", "exam_h_007",
+    "imp_011", "imp_013", "imp_014", "exam_b_006", "exam_b_007",
+    "imp_019", "imp_020", "imp_021", "exam_p_005", "exam_p_006", "imp_022a", "imp_022b", "exam_pb_003"
   ],
-  "timeLimit": 60,
+  "timeLimit": 75,
   "passingScore": 60
 }

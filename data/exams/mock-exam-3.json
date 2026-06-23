@@ -1,12 +1,13 @@
 {
   "id": "mock-exam-3",
   "name": "Mock Exam 3",
-  "description": "Normal, continuous PDFs, joint distributions.",
+  "description": "Normal, continuous PDFs, joint & variance.",
   "questionIds": [
-    "imp_002", "imp_003", "imp_004", "imp_005", "imp_007", "imp_009",
-    "imp_010", "imp_012", "imp_023", "imp_024", "imp_025", "imp_026",
-    "imp_027", "imp_028", "imp_029", "imp_030"
+    "imp_002", "imp_003", "imp_004", "exam_c_005", "exam_c_006",
+    "imp_005", "imp_007", "imp_009", "exam_j_004", "exam_j_005",
+    "imp_008", "exam_v_003", "exam_v_004", "imp_012",
+    "imp_023", "imp_024", "imp_026", "imp_027", "imp_028", "imp_029", "imp_030", "exam_n_008", "exam_n_010"
   ],
-  "timeLimit": 75,
+  "timeLimit": 90,
   "passingScore": 60
 }

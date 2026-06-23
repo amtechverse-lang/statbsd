@@ -7,8 +7,8 @@ const DATA_DIR = path.join(process.cwd(), "data");
 
 const REVISION_TOPIC_MATCH: Record<string, string[]> = {
   hypergeometric: ["Hypergeometric"],
-  binomial: ["Binomial"],
-  poisson: ["Poisson"],
+  poisson: ["Poisson", "Poisson/Binomial"],
+  binomial: ["Binomial", "Poisson/Binomial"],
   normal: ["Normal"],
   continuous: ["Continuous"],
   joint: ["Joint", "Covariance", "Correlation"],
@@ -66,11 +66,11 @@ export function getLesson(moduleId: string, slug: string) {
 }
 
 export function getAllQuestions(): QuestionData[] {
-  const questionsDir = path.join(DATA_DIR, "questions");
-  return fs
-    .readdirSync(questionsDir)
-    .filter((f) => f.endsWith(".json"))
-    .flatMap((f) => loadJson<QuestionData[]>(path.join(questionsDir, f)));
+  const examFile = path.join(DATA_DIR, "questions", "exam-questions.json");
+  if (!fs.existsSync(examFile)) {
+    return [];
+  }
+  return loadJson<QuestionData[]>(examFile);
 }
 
 export function getQuestions(filters?: {

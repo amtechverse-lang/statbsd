@@ -17,7 +17,7 @@ Open http://localhost:3000 → **Practice** or **Revise**
 
 | Section | Purpose |
 |---------|---------|
-| **Practice** | 31 exam-style problems with hints + step-by-step solutions |
+| **Practice** | 57 exam-style problems with hints + step-by-step solutions |
 | **Revise** | Short notes per topic (~5 min each) — open any topic, any order |
 | **Mock Exam** | 3 timed exams using the same question style |
 | **Tools** | Formula sheet, Z-table, calculator |

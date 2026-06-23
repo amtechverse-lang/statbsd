@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "generate:content": "tsx scripts/generate-content.ts",
-    "generate:important": "tsx scripts/generate-important-questions.ts",
+    "generate:exam": "tsx scripts/generate-exam-questions.ts",
+    "generate:important": "tsx scripts/generate-exam-questions.ts",
     "validate:content": "tsx scripts/validate-content.ts"
   },
   "dependencies": {
