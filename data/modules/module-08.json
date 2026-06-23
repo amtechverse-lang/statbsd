@@ -1,0 +1,61 @@
+{
+  "id": "poisson-distribution",
+  "title": "Poisson Distribution",
+  "description": "Counting events over time or space.",
+  "order": 8,
+  "prerequisites": [
+    "geometric-distribution"
+  ],
+  "lessons": [
+    {
+      "slug": "poisson-process",
+      "title": "Poisson Process",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/poisson-distribution-1.svg"
+      ],
+      "examples": [],
+      "content": "## Poisson Process\n\nEvents occur independently at constant average rate λ.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "poisson-pmf",
+      "title": "Poisson PMF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/poisson-distribution-2.svg"
+      ],
+      "examples": [],
+      "content": "## Poisson PMF\n\nP(X=x) = e^(-λt)(λt)^x / x!.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "mean-and-variance",
+      "title": "Mean and Variance",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/poisson-distribution-3.svg"
+      ],
+      "examples": [],
+      "content": "## Mean and Variance\n\nBoth equal λt.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "poisson-as-binomial-limit",
+      "title": "Poisson as Binomial Limit",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/poisson-distribution-4.svg"
+      ],
+      "examples": [],
+      "content": "## Poisson as Binomial Limit\n\nWhen n is large and p is small, Binomial → Poisson.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "applications",
+      "title": "Applications",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/poisson-distribution-5.svg"
+      ],
+      "examples": [],
+      "content": "## Applications\n\nAccidents, arrivals, defects per unit.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

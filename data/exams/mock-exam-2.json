@@ -1,0 +1,29 @@
+{
+  "id": "mock-exam-2",
+  "name": "Mock Exam 2",
+  "description": "Full practice exam 2 covering all topics.",
+  "questionIds": [
+    "poisson_distribution_009",
+    "binomial_022",
+    "normal_app_008",
+    "normal_023",
+    "random_variables_020",
+    "normal_039",
+    "normal_012",
+    "normal_016",
+    "binomial_032",
+    "normal_032",
+    "discrete_distributions_008",
+    "normal_044",
+    "binomial_011",
+    "foundations_010",
+    "normal_app_020",
+    "normal_033",
+    "normal_app_003",
+    "normal_app_032",
+    "random_variables_029",
+    "normal_app_009"
+  ],
+  "timeLimit": 60,
+  "passingScore": 70
+}

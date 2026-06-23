@@ -1,0 +1,512 @@
+[
+  {
+    "id": "discrete_uniform_001",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Fair die with 5 sides. P(X=2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/5",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.2"
+      },
+      {
+        "label": "B",
+        "value": "0.24"
+      },
+      {
+        "label": "C",
+        "value": "0.16"
+      },
+      {
+        "label": "D",
+        "value": "0.3"
+      }
+    ]
+  },
+  {
+    "id": "discrete_uniform_002",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Fair die with 6 sides. P(X=2)?",
+    "correctAnswer": "0.1667",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/6",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1667",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_003",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Fair die with 7 sides. P(X=2)?",
+    "correctAnswer": "0.1429",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/7",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1429",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_004",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Fair die with 4 sides. P(X=2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/4",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.25",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.25"
+      },
+      {
+        "label": "B",
+        "value": "0.3"
+      },
+      {
+        "label": "C",
+        "value": "0.2"
+      },
+      {
+        "label": "D",
+        "value": "0.35"
+      }
+    ]
+  },
+  {
+    "id": "discrete_uniform_005",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Fair die with 5 sides. P(X=2)?",
+    "correctAnswer": "0.2",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/5",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_006",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Fair die with 6 sides. P(X=2)?",
+    "correctAnswer": "0.1667",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/6",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1667",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_007",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Fair die with 7 sides. P(X=2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/7",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1429",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.1429"
+      },
+      {
+        "label": "B",
+        "value": "0.1715"
+      },
+      {
+        "label": "C",
+        "value": "0.1143"
+      },
+      {
+        "label": "D",
+        "value": "0.2429"
+      }
+    ]
+  },
+  {
+    "id": "discrete_uniform_008",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Fair die with 4 sides. P(X=2)?",
+    "correctAnswer": "0.25",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/4",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.25",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_009",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Fair die with 5 sides. P(X=2)?",
+    "correctAnswer": "0.2",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/5",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_010",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Fair die with 6 sides. P(X=2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/6",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1667",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.1667"
+      },
+      {
+        "label": "B",
+        "value": "0.2"
+      },
+      {
+        "label": "C",
+        "value": "0.1334"
+      },
+      {
+        "label": "D",
+        "value": "0.2667"
+      }
+    ]
+  },
+  {
+    "id": "discrete_uniform_011",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Fair die with 7 sides. P(X=2)?",
+    "correctAnswer": "0.1429",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/7",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1429",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_012",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Fair die with 4 sides. P(X=2)?",
+    "correctAnswer": "0.25",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/4",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.25",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_013",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Fair die with 5 sides. P(X=2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/5",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.2"
+      },
+      {
+        "label": "B",
+        "value": "0.24"
+      },
+      {
+        "label": "C",
+        "value": "0.16"
+      },
+      {
+        "label": "D",
+        "value": "0.3"
+      }
+    ]
+  },
+  {
+    "id": "discrete_uniform_014",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Fair die with 6 sides. P(X=2)?",
+    "correctAnswer": "0.1667",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/6",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1667",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "discrete_uniform_015",
+    "moduleId": "discrete-uniform",
+    "topic": "Discrete Uniform Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Fair die with 7 sides. P(X=2)?",
+    "correctAnswer": "0.1429",
+    "hints": [
+      "Each outcome has probability 1/n"
+    ],
+    "tags": [
+      "discrete-uniform"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Uniform",
+          "content": "P(X=2) = 1/7",
+          "explanation": "Equal probability."
+        }
+      ],
+      "finalAnswer": "0.1429",
+      "commonMistakes": []
+    }
+  }
+]

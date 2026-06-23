@@ -1,0 +1,71 @@
+{
+  "id": "binomial-distribution",
+  "title": "Binomial Distribution",
+  "description": "Master the most important discrete distribution.",
+  "order": 5,
+  "prerequisites": [
+    "discrete-uniform"
+  ],
+  "lessons": [
+    {
+      "slug": "bernoulli-process",
+      "title": "Bernoulli Process",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/binomial-distribution-1.svg"
+      ],
+      "examples": [],
+      "content": "## Bernoulli Process\n\nFixed n trials, independent, two outcomes, constant p.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "binomial-random-variable",
+      "title": "Binomial Random Variable",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/binomial-distribution-2.svg"
+      ],
+      "examples": [],
+      "content": "## Binomial Random Variable\n\nX = number of successes in n Bernoulli trials.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "binomial-pmf",
+      "title": "Binomial PMF",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/binomial-distribution-3.svg"
+      ],
+      "examples": [],
+      "content": "## Binomial PMF\n\nP(X=x) = C(n,x) p^x (1-p)^(n-x).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "mean-and-variance",
+      "title": "Mean and Variance",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/binomial-distribution-4.svg"
+      ],
+      "examples": [],
+      "content": "## Mean and Variance\n\nμ = np, σ² = np(1-p).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "binomial-tables",
+      "title": "Binomial Tables",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/binomial-distribution-5.svg"
+      ],
+      "examples": [],
+      "content": "## Binomial Tables\n\nUsing tables to find cumulative probabilities.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "applications",
+      "title": "Applications",
+      "order": 6,
+      "diagrams": [
+        "/diagrams/binomial-distribution-6.svg"
+      ],
+      "examples": [],
+      "content": "## Applications\n\nQuality control, medical trials, survey sampling.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "continuous-distributions",
+  "title": "Continuous Probability Distributions",
+  "description": "Understand PDF, properties, and CDF for continuous variables.",
+  "order": 3,
+  "prerequisites": [
+    "discrete-distributions"
+  ],
+  "lessons": [
+    {
+      "slug": "pdf-definition",
+      "title": "PDF Definition",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/continuous-distributions-1.svg"
+      ],
+      "examples": [],
+      "content": "## PDF Definition\n\nProbability Density Function describes continuous distributions.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "properties-of-pdf",
+      "title": "Properties of PDF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/continuous-distributions-2.svg"
+      ],
+      "examples": [],
+      "content": "## Properties of PDF\n\nPDF is non-negative; total area under curve equals 1.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "why-p-x-a-0",
+      "title": "Why P(X=a)=0",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/continuous-distributions-3.svg"
+      ],
+      "examples": [],
+      "content": "## Why P(X=a)=0\n\nFor continuous RVs, the probability at any single point is zero.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "calculating-from-pdf",
+      "title": "Calculating from PDF",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/continuous-distributions-4.svg"
+      ],
+      "examples": [],
+      "content": "## Calculating from PDF\n\nProbabilities are areas under the PDF curve.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "cdf-for-continuous",
+      "title": "CDF for Continuous",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/continuous-distributions-5.svg"
+      ],
+      "examples": [],
+      "content": "## CDF for Continuous\n\nF(x) = integral of PDF from -∞ to x.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

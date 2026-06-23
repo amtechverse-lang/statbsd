@@ -1,0 +1,61 @@
+{
+  "id": "joint-distributions",
+  "title": "Joint Probability Distributions",
+  "description": "Multiple random variables, marginals, conditionals, and independence.",
+  "order": 9,
+  "prerequisites": [
+    "poisson-distribution"
+  ],
+  "lessons": [
+    {
+      "slug": "joint-pmf",
+      "title": "Joint PMF",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/joint-distributions-1.svg"
+      ],
+      "examples": [],
+      "content": "## Joint PMF\n\nP(X=x, Y=y) for two discrete random variables.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "joint-pdf",
+      "title": "Joint PDF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/joint-distributions-2.svg"
+      ],
+      "examples": [],
+      "content": "## Joint PDF\n\nf(x,y) for two continuous random variables.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "marginal-distributions",
+      "title": "Marginal Distributions",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/joint-distributions-3.svg"
+      ],
+      "examples": [],
+      "content": "## Marginal Distributions\n\ng(x) = Σ_y P(X=x,Y=y).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "conditional-distributions",
+      "title": "Conditional Distributions",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/joint-distributions-4.svg"
+      ],
+      "examples": [],
+      "content": "## Conditional Distributions\n\nP(Y=y|X=x) = P(X=x,Y=y)/P(X=x).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "independence",
+      "title": "Independence",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/joint-distributions-5.svg"
+      ],
+      "examples": [],
+      "content": "## Independence\n\nP(X=x,Y=y) = P(X=x)P(Y=y) for all x,y.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

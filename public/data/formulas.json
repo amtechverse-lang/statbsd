@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "category": "Discrete Distributions",
+      "items": [
+        {
+          "name": "Binomial",
+          "formula": "P(X=x) = C(n,x)p^x(1-p)^{n-x}",
+          "variables": "n=trials, p=success prob, x=successes",
+          "mean": "μ=np",
+          "variance": "σ²=np(1-p)"
+        },
+        {
+          "name": "Hypergeometric",
+          "formula": "P(X=x) = C(K,x)C(N-K,n-x)/C(N,n)",
+          "variables": "N=population, K=successes, n=sample",
+          "mean": "μ=nK/N",
+          "variance": "σ²=n(K/N)(1-K/N)(N-n)/(N-1)"
+        },
+        {
+          "name": "Geometric",
+          "formula": "P(X=x) = p(1-p)^{x-1}",
+          "variables": "p=success prob, x=trial of first success",
+          "mean": "μ=1/p",
+          "variance": "σ²=(1-p)/p²"
+        },
+        {
+          "name": "Poisson",
+          "formula": "P(X=x) = e^{-λ}λ^x/x!",
+          "variables": "λ=rate",
+          "mean": "μ=λ",
+          "variance": "σ²=λ"
+        },
+        {
+          "name": "Uniform",
+          "formula": "P(X=x) = 1/n",
+          "variables": "n=equally likely outcomes",
+          "mean": "μ=(n+1)/2",
+          "variance": "σ²=(n²-1)/12"
+        }
+      ]
+    },
+    {
+      "category": "Continuous Distributions",
+      "items": [
+        {
+          "name": "Normal",
+          "formula": "f(x) = (1/σ√2π)e^{-((x-μ)²/2σ²)}",
+          "variables": "μ=mean, σ=std dev",
+          "mean": "μ",
+          "variance": "σ²"
+        },
+        {
+          "name": "Standardization",
+          "formula": "Z = (X-μ)/σ",
+          "variables": "Z~N(0,1)",
+          "mean": "0",
+          "variance": "1"
+        }
+      ]
+    },
+    {
+      "category": "Combinatorics",
+      "items": [
+        {
+          "name": "Combination",
+          "formula": "C(n,r) = n!/(r!(n-r)!)",
+          "variables": "Order doesn't matter",
+          "mean": "",
+          "variance": ""
+        },
+        {
+          "name": "Permutation",
+          "formula": "P(n,r) = n!/(n-r)!",
+          "variables": "Order matters",
+          "mean": "",
+          "variance": ""
+        }
+      ]
+    }
+  ]
+}

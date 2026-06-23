@@ -1,0 +1,61 @@
+{
+  "id": "geometric-distribution",
+  "title": "Geometric Distribution",
+  "description": "Waiting time until first success.",
+  "order": 7,
+  "prerequisites": [
+    "hypergeometric-distribution"
+  ],
+  "lessons": [
+    {
+      "slug": "definition",
+      "title": "Definition",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/geometric-distribution-1.svg"
+      ],
+      "examples": [],
+      "content": "## Definition\n\nNumber of trials until the first success.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "geometric-pmf",
+      "title": "Geometric PMF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/geometric-distribution-2.svg"
+      ],
+      "examples": [],
+      "content": "## Geometric PMF\n\nP(X=x) = p(1-p)^(x-1) for x = 1, 2, 3, ...\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "mean-and-variance",
+      "title": "Mean and Variance",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/geometric-distribution-3.svg"
+      ],
+      "examples": [],
+      "content": "## Mean and Variance\n\nμ = 1/p, σ² = (1-p)/p².\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "negative-binomial-relation",
+      "title": "Negative Binomial Relation",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/geometric-distribution-4.svg"
+      ],
+      "examples": [],
+      "content": "## Negative Binomial Relation\n\nGeneralization counting r-th success.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "applications",
+      "title": "Applications",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/geometric-distribution-5.svg"
+      ],
+      "examples": [],
+      "content": "## Applications\n\nInspection until first defect, connection attempts.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

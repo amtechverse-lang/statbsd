@@ -1,0 +1,61 @@
+{
+  "id": "discrete-distributions",
+  "title": "Discrete Probability Distributions",
+  "description": "Master PMF and CDF for discrete random variables.",
+  "order": 2,
+  "prerequisites": [
+    "random-variables"
+  ],
+  "lessons": [
+    {
+      "slug": "pmf-definition",
+      "title": "PMF Definition",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/discrete-distributions-1.svg"
+      ],
+      "examples": [],
+      "content": "## PMF Definition\n\nProbability Mass Function gives P(X=x) for each value x.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "properties-of-pmf",
+      "title": "Properties of PMF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/discrete-distributions-2.svg"
+      ],
+      "examples": [],
+      "content": "## Properties of PMF\n\nAll probabilities are non-negative and sum to 1.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "calculating-from-pmf",
+      "title": "Calculating from PMF",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/discrete-distributions-3.svg"
+      ],
+      "examples": [],
+      "content": "## Calculating from PMF\n\nFind probabilities of events using the PMF.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "cdf-definition",
+      "title": "CDF Definition",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/discrete-distributions-4.svg"
+      ],
+      "examples": [],
+      "content": "## CDF Definition\n\nCumulative Distribution Function: F(x) = P(X ≤ x).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "pmf-and-cdf-relationship",
+      "title": "PMF and CDF Relationship",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/discrete-distributions-5.svg"
+      ],
+      "examples": [],
+      "content": "## PMF and CDF Relationship\n\nCDF is the running sum of PMF values.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

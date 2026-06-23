@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Statistical diagram">
+  <rect width="400" height="200" fill="#f8fafc"/>
+  <text x="200" y="100" text-anchor="middle" font-size="16" fill="#64748b">StatMaster Diagram</text>
+</svg>

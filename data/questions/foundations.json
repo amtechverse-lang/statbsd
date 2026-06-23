@@ -1,0 +1,621 @@
+[
+  {
+    "id": "foundations_001",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 15 + 7 = ____",
+    "correctAnswer": "22",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "15 + 7 = 22",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "22",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_002",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 50 - 18 = ____",
+    "correctAnswer": "32",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "50 - 18 = 32",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "32",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_003",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 8 * 7 = ____",
+    "correctAnswer": "56",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "8 * 7 = 56",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "56",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_004",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 84 / 4 = ____",
+    "correctAnswer": "21",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "84 / 4 = 21",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "21",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_005",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 3.5 + 1.2 = ____",
+    "correctAnswer": "4.7",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "3.5 + 1.2 = 4.7",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "4.7",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_006",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 10 - 3.5 = ____",
+    "correctAnswer": "6.5",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "10 - 3.5 = 6.5",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "6.5",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_007",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 0.25 * 4 = ____",
+    "correctAnswer": "1",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "0.25 * 4 = 1",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "1",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_008",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 7.2 / 0.9 = ____",
+    "correctAnswer": "8",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "7.2 / 0.9 = 8",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "8",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_009",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 100 - 37 = ____",
+    "correctAnswer": "63",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "100 - 37 = 63",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "63",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_010",
+    "moduleId": "foundations",
+    "topic": "Arithmetic",
+    "subtopic": "Basic Operations",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate: 6 * 9 = ____",
+    "correctAnswer": "54",
+    "hints": [
+      "Perform the operation step by step.",
+      "Remember order of operations."
+    ],
+    "tags": [
+      "arithmetic"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Calculate",
+          "content": "6 * 9 = 54",
+          "explanation": "Basic arithmetic operation."
+        }
+      ],
+      "finalAnswer": "54",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_011",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(5, 2) = ____",
+    "correctAnswer": "10",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(5,2) = 5!/(2!×3!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(5,2) = 5!/(2!×3!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(5,2) = 10",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "10",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_012",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(8, 3) = ____",
+    "correctAnswer": "56",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(8,3) = 8!/(3!×5!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(8,3) = 8!/(3!×5!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(8,3) = 56",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "56",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_013",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(10, 4) = ____",
+    "correctAnswer": "210",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(10,4) = 10!/(4!×6!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(10,4) = 10!/(4!×6!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(10,4) = 210",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "210",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_014",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(6, 0) = ____",
+    "correctAnswer": "1",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(6,0) = 6!/(0!×6!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(6,0) = 6!/(0!×6!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(6,0) = 1",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "1",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_015",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(7, 7) = ____",
+    "correctAnswer": "1",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(7,7) = 7!/(7!×0!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(7,7) = 7!/(7!×0!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(7,7) = 1",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "1",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_016",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(9, 2) = ____",
+    "correctAnswer": "36",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(9,2) = 9!/(2!×7!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(9,2) = 9!/(2!×7!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(9,2) = 36",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "36",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_017",
+    "moduleId": "foundations",
+    "topic": "Combinations",
+    "subtopic": "nCr",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Calculate C(12, 3) = ____",
+    "correctAnswer": "220",
+    "hints": [
+      "C(n,r) = n! / (r!(n-r)!)",
+      "C(12,3) = 12!/(3!×9!)"
+    ],
+    "tags": [
+      "combinations"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Formula",
+          "content": "C(12,3) = 12!/(3!×9!)",
+          "explanation": "Combination formula."
+        },
+        {
+          "step": 2,
+          "title": "Calculate",
+          "content": "C(12,3) = 220",
+          "explanation": "Compute factorials and divide."
+        }
+      ],
+      "finalAnswer": "220",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_018",
+    "moduleId": "foundations",
+    "topic": "Factorials",
+    "subtopic": "n!",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate 3! = ____",
+    "correctAnswer": "6",
+    "hints": [
+      "3! = 1 × 2 × 3"
+    ],
+    "tags": [
+      "factorial"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Expand",
+          "content": "3! = 6",
+          "explanation": "Multiply all integers from 1 to n."
+        }
+      ],
+      "finalAnswer": "6",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_019",
+    "moduleId": "foundations",
+    "topic": "Factorials",
+    "subtopic": "n!",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate 4! = ____",
+    "correctAnswer": "24",
+    "hints": [
+      "4! = 1 × 2 × 3 × 4"
+    ],
+    "tags": [
+      "factorial"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Expand",
+          "content": "4! = 24",
+          "explanation": "Multiply all integers from 1 to n."
+        }
+      ],
+      "finalAnswer": "24",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "foundations_020",
+    "moduleId": "foundations",
+    "topic": "Factorials",
+    "subtopic": "n!",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Calculate 5! = ____",
+    "correctAnswer": "120",
+    "hints": [
+      "5! = 1 × 2 × 3 × 4 × 5"
+    ],
+    "tags": [
+      "factorial"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Expand",
+          "content": "5! = 120",
+          "explanation": "Multiply all integers from 1 to n."
+        }
+      ],
+      "finalAnswer": "120",
+      "commonMistakes": []
+    }
+  }
+]

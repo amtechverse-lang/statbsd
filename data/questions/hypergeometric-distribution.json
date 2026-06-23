@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "hypergeometric_distribution_001",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_002",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_003",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_004",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_005",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_006",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_007",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_008",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_009",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_010",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_011",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_012",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_013",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_014",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_015",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_016",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_017",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_018",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_019",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_020",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_021",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_022",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_023",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_024",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_025",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_026",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_027",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_028",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.43134",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.43134",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.43134"
+      },
+      {
+        "label": "B",
+        "value": "0.5176"
+      },
+      {
+        "label": "C",
+        "value": "0.3451"
+      },
+      {
+        "label": "D",
+        "value": "0.5313"
+      }
+    ]
+  },
+  {
+    "id": "hypergeometric_distribution_029",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=2)?",
+    "correctAnswer": "0.20984",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.20984",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.20984",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "hypergeometric_distribution_030",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Population N=50, K=10 successes. Sample n=5 without replacement. P(X=0)?",
+    "correctAnswer": "0.31056",
+    "hints": [
+      "Use hypergeometric PMF",
+      "Sampling without replacement"
+    ],
+    "tags": [
+      "hypergeometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.31056",
+          "explanation": "Hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "0.31056",
+      "commonMistakes": []
+    }
+  }
+]

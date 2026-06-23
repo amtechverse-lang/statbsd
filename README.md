@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StatMaster
+
+Interactive self-paced learning platform for **Probability & Statistics**. Master 12 modules, practice 400+ questions, use interactive tools, and prepare for exams.
+
+## Tech Stack
+
+- **Next.js 14** (App Router) + TypeScript
+- **Tailwind CSS** + shadcn-style UI components
+- **PostgreSQL** + Prisma ORM (Neon recommended)
+- **NextAuth.js** (credentials authentication)
+- **Recharts** for visualizations
+- **KaTeX** for math rendering
+- **Framer Motion** for animations
+- **Zustand** for practice session state
+
+## Features
+
+- 13 learning modules (Foundations → Exam Prep)
+- 400+ practice questions with step-by-step solutions
+- Progress tracking, streaks, and achievements
+- Distribution Explorer, Probability Calculator, Z-Table Visualizer
+- 3 timed mock exams with weakness analysis
+- Mobile-responsive design
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- PostgreSQL database ([Neon](https://neon.tech) free tier recommended)
+
+### Setup
+
+```bash
+cd statmaster
+npm install
+cp .env.example .env
+# Edit .env with your DATABASE_URL and NEXTAUTH_SECRET
+```
+
+### Database
+
+```bash
+# Push schema to database
+npm run db:push
+
+# Generate content (if needed)
+npm run generate:content
+
+# Seed modules, questions, and exams
+npm run db:seed
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000), register an account, and start learning.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for the complete step-by-step guide.
 
-## Learn More
+Quick summary:
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a Neon PostgreSQL database (free tier)
+2. Push to GitHub and import in Vercel
+3. Set `DATABASE_URL`, `DIRECT_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL`
+4. After deploy: `npx prisma migrate deploy && npm run db:seed`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run db:push` | Push Prisma schema to DB |
+| `npm run db:seed` | Seed content from JSON |
+| `npm run generate:content` | Regenerate question/module JSON |
+| `npm run validate:content` | Validate content files |
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+statmaster/
+├── app/              # Next.js App Router pages
+├── components/       # UI, practice, calculators, visualizations
+├── data/             # Module, question, exam JSON (seed source)
+├── lib/              # Auth, math, progress, Prisma client
+├── prisma/           # Schema and seed script
+└── public/diagrams/  # SVG assets
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT

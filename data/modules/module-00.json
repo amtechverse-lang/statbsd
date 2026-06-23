@@ -1,0 +1,79 @@
+{
+  "id": "foundations",
+  "title": "Foundations",
+  "description": "Basic math skills: arithmetic, fractions, percentages, factorials, combinations, algebra, and set theory.",
+  "order": 0,
+  "prerequisites": [],
+  "lessons": [
+    {
+      "slug": "basic-arithmetic",
+      "title": "Basic Arithmetic",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/foundations-1.svg"
+      ],
+      "examples": [],
+      "content": "## Basic Arithmetic\n\nReview addition, subtraction, multiplication, and division with whole numbers and decimals.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "fractions-and-decimals",
+      "title": "Fractions and Decimals",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/foundations-2.svg"
+      ],
+      "examples": [],
+      "content": "## Fractions and Decimals\n\nConvert between fractions and decimals. Add and subtract fractions.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "percentages",
+      "title": "Percentages",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/foundations-3.svg"
+      ],
+      "examples": [],
+      "content": "## Percentages\n\nCalculate percentages, find percentage increase/decrease.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "factorials",
+      "title": "Factorials",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/foundations-4.svg"
+      ],
+      "examples": [],
+      "content": "## Factorials\n\nUnderstand n! and compute factorials for small n.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "combinations-and-permutations",
+      "title": "Combinations and Permutations",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/foundations-5.svg"
+      ],
+      "examples": [],
+      "content": "## Combinations and Permutations\n\nLearn nCr and nPr formulas and when to use each.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "basic-algebra",
+      "title": "Basic Algebra",
+      "order": 6,
+      "diagrams": [
+        "/diagrams/foundations-6.svg"
+      ],
+      "examples": [],
+      "content": "## Basic Algebra\n\nSolve simple equations for x.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "basic-set-theory",
+      "title": "Basic Set Theory",
+      "order": 7,
+      "diagrams": [
+        "/diagrams/foundations-7.svg"
+      ],
+      "examples": [],
+      "content": "## Basic Set Theory\n\nUnions, intersections, complements, and Venn diagrams.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

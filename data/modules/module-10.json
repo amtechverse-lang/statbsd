@@ -1,0 +1,81 @@
+{
+  "id": "normal-distribution",
+  "title": "Normal Distribution",
+  "description": "The most important continuous distribution.",
+  "order": 10,
+  "prerequisites": [
+    "joint-distributions"
+  ],
+  "lessons": [
+    {
+      "slug": "definition",
+      "title": "Definition",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/normal-distribution-1.svg"
+      ],
+      "examples": [],
+      "content": "## Definition\n\nBell-shaped curve defined by μ and σ.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "pdf-and-properties",
+      "title": "PDF and Properties",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/normal-distribution-2.svg"
+      ],
+      "examples": [],
+      "content": "## PDF and Properties\n\nSymmetric about μ, 68-95-99.7 rule.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "standard-normal-z",
+      "title": "Standard Normal Z",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/normal-distribution-3.svg"
+      ],
+      "examples": [],
+      "content": "## Standard Normal Z\n\nZ = (X-μ)/σ has μ=0, σ=1.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "standardization",
+      "title": "Standardization",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/normal-distribution-4.svg"
+      ],
+      "examples": [],
+      "content": "## Standardization\n\nConvert any normal problem to Z-scores.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "z-table-usage",
+      "title": "Z-Table Usage",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/normal-distribution-5.svg"
+      ],
+      "examples": [],
+      "content": "## Z-Table Usage\n\nFind P(Z<z) using standard normal table.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "interpolation",
+      "title": "Interpolation",
+      "order": 6,
+      "diagrams": [
+        "/diagrams/normal-distribution-6.svg"
+      ],
+      "examples": [],
+      "content": "## Interpolation\n\nEstimate probabilities between table entries.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "finding-probabilities",
+      "title": "Finding Probabilities",
+      "order": 7,
+      "diagrams": [
+        "/diagrams/normal-distribution-7.svg"
+      ],
+      "examples": [],
+      "content": "## Finding Probabilities\n\nStep-by-step probability calculations.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

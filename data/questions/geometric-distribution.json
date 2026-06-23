@@ -1,0 +1,864 @@
+[
+  {
+    "id": "geometric_distribution_001",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Geometric with p=0.3. P(first success on trial 2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.21",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.21",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.21"
+      },
+      {
+        "label": "B",
+        "value": "0.252"
+      },
+      {
+        "label": "C",
+        "value": "0.168"
+      },
+      {
+        "label": "D",
+        "value": "0.31"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_002",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Geometric with p=0.4. P(first success on trial 3)?",
+    "correctAnswer": "0.144",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.144",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.144",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_003",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.5. P(first success on trial 4)?",
+    "correctAnswer": "0.0625",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.0625",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.0625",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_004",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Geometric with p=0.6. P(first success on trial 5)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.01536",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.01536",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.01536"
+      },
+      {
+        "label": "B",
+        "value": "0.0184"
+      },
+      {
+        "label": "C",
+        "value": "0.0123"
+      },
+      {
+        "label": "D",
+        "value": "0.1154"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_005",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Geometric with p=0.2. P(first success on trial 1)?",
+    "correctAnswer": "0.2",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.2",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_006",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.3. P(first success on trial 2)?",
+    "correctAnswer": "0.21",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.21",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.21",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_007",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Geometric with p=0.4. P(first success on trial 3)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.144",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.144",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.144"
+      },
+      {
+        "label": "B",
+        "value": "0.1728"
+      },
+      {
+        "label": "C",
+        "value": "0.1152"
+      },
+      {
+        "label": "D",
+        "value": "0.244"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_008",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "FillIn",
+    "question": "Geometric with p=0.5. P(first success on trial 4)?",
+    "correctAnswer": "0.0625",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.0625",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.0625",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_009",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.6. P(first success on trial 5)?",
+    "correctAnswer": "0.01536",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.01536",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.01536",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_010",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Geometric with p=0.2. P(first success on trial 1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.2",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.2"
+      },
+      {
+        "label": "B",
+        "value": "0.24"
+      },
+      {
+        "label": "C",
+        "value": "0.16"
+      },
+      {
+        "label": "D",
+        "value": "0.3"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_011",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Geometric with p=0.3. P(first success on trial 2)?",
+    "correctAnswer": "0.21",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.21",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.21",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_012",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.4. P(first success on trial 3)?",
+    "correctAnswer": "0.144",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.144",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.144",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_013",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Geometric with p=0.5. P(first success on trial 4)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.0625",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.0625",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.0625"
+      },
+      {
+        "label": "B",
+        "value": "0.075"
+      },
+      {
+        "label": "C",
+        "value": "0.05"
+      },
+      {
+        "label": "D",
+        "value": "0.1625"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_014",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Geometric with p=0.6. P(first success on trial 5)?",
+    "correctAnswer": "0.01536",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.01536",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.01536",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_015",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.2. P(first success on trial 1)?",
+    "correctAnswer": "0.2",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.2",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_016",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Geometric with p=0.3. P(first success on trial 2)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.21",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.21",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.21"
+      },
+      {
+        "label": "B",
+        "value": "0.252"
+      },
+      {
+        "label": "C",
+        "value": "0.168"
+      },
+      {
+        "label": "D",
+        "value": "0.31"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_017",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "Geometric with p=0.4. P(first success on trial 3)?",
+    "correctAnswer": "0.144",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.144",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.144",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_018",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.5. P(first success on trial 4)?",
+    "correctAnswer": "0.0625",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.0625",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.0625",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_019",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Geometric with p=0.6. P(first success on trial 5)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.01536",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.01536",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.01536"
+      },
+      {
+        "label": "B",
+        "value": "0.0184"
+      },
+      {
+        "label": "C",
+        "value": "0.0123"
+      },
+      {
+        "label": "D",
+        "value": "0.1154"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_020",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Geometric with p=0.2. P(first success on trial 1)?",
+    "correctAnswer": "0.2",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.2",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_021",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.3. P(first success on trial 2)?",
+    "correctAnswer": "0.21",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.21",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.21",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_022",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Geometric with p=0.4. P(first success on trial 3)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.144",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.144",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.144"
+      },
+      {
+        "label": "B",
+        "value": "0.1728"
+      },
+      {
+        "label": "C",
+        "value": "0.1152"
+      },
+      {
+        "label": "D",
+        "value": "0.244"
+      }
+    ]
+  },
+  {
+    "id": "geometric_distribution_023",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "FillIn",
+    "question": "Geometric with p=0.5. P(first success on trial 4)?",
+    "correctAnswer": "0.0625",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.0625",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.0625",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_024",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Geometric with p=0.6. P(first success on trial 5)?",
+    "correctAnswer": "0.01536",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.01536",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.01536",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "geometric_distribution_025",
+    "moduleId": "geometric-distribution",
+    "topic": "Geometric Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "question": "Geometric with p=0.2. P(first success on trial 1)?",
+    "correctAnswer": "A",
+    "hints": [
+      "P(X=x) = p(1-p)^(x-1)"
+    ],
+    "tags": [
+      "geometric-distribution"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "PMF",
+          "content": "0.2",
+          "explanation": "Geometric formula."
+        }
+      ],
+      "finalAnswer": "0.2",
+      "commonMistakes": []
+    },
+    "options": [
+      {
+        "label": "A",
+        "value": "0.2"
+      },
+      {
+        "label": "B",
+        "value": "0.24"
+      },
+      {
+        "label": "C",
+        "value": "0.16"
+      },
+      {
+        "label": "D",
+        "value": "0.3"
+      }
+    ]
+  }
+]

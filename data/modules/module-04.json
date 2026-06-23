@@ -1,0 +1,51 @@
+{
+  "id": "discrete-uniform",
+  "title": "Discrete Uniform Distribution",
+  "description": "When all outcomes are equally likely.",
+  "order": 4,
+  "prerequisites": [
+    "continuous-distributions"
+  ],
+  "lessons": [
+    {
+      "slug": "equally-likely-outcomes",
+      "title": "Equally Likely Outcomes",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/discrete-uniform-1.svg"
+      ],
+      "examples": [],
+      "content": "## Equally Likely Outcomes\n\nEach of n outcomes has probability 1/n.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "uniform-pmf",
+      "title": "Uniform PMF",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/discrete-uniform-2.svg"
+      ],
+      "examples": [],
+      "content": "## Uniform PMF\n\nP(X=x) = 1/n for x = 1, 2, ..., n.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "real-world-examples",
+      "title": "Real-World Examples",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/discrete-uniform-3.svg"
+      ],
+      "examples": [],
+      "content": "## Real-World Examples\n\nFair die, random number generation, random selection.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "mean-and-variance",
+      "title": "Mean and Variance",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/discrete-uniform-4.svg"
+      ],
+      "examples": [],
+      "content": "## Mean and Variance\n\nμ = (n+1)/2, σ² = (n²-1)/12.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

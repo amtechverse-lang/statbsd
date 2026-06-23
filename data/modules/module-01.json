@@ -1,0 +1,61 @@
+{
+  "id": "random-variables",
+  "title": "Introduction to Random Variables",
+  "description": "Understand random variables, sample spaces, discrete vs continuous types, and Bernoulli variables.",
+  "order": 1,
+  "prerequisites": [
+    "foundations"
+  ],
+  "lessons": [
+    {
+      "slug": "what-is-a-random-variable",
+      "title": "What is a Random Variable?",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/random-variables-1.svg"
+      ],
+      "examples": [],
+      "content": "## What is a Random Variable?\n\nA random variable assigns a number to each outcome in a sample space.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "sample-space-vs-random-variable",
+      "title": "Sample Space vs Random Variable",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/random-variables-2.svg"
+      ],
+      "examples": [],
+      "content": "## Sample Space vs Random Variable\n\nDistinguish between outcomes and the numerical values assigned.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "discrete-vs-continuous",
+      "title": "Discrete vs Continuous",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/random-variables-3.svg"
+      ],
+      "examples": [],
+      "content": "## Discrete vs Continuous\n\nDiscrete variables take countable values; continuous take any value in an interval.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "bernoulli-random-variables",
+      "title": "Bernoulli Random Variables",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/random-variables-4.svg"
+      ],
+      "examples": [],
+      "content": "## Bernoulli Random Variables\n\nDummy variables with exactly two outcomes: success (1) or failure (0).\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "real-life-examples",
+      "title": "Real-Life Examples",
+      "order": 5,
+      "diagrams": [
+        "/diagrams/random-variables-5.svg"
+      ],
+      "examples": [],
+      "content": "## Real-Life Examples\n\nCoin tosses, urn draws, quality control, and matching problems.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}

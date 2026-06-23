@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "normal_app_001",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=100, σ=15. Find P(X<115).",
+    "correctAnswer": "0.8413",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 1"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 1",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.8413",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.8413",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_002",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=50, σ=10. Find P(X<65).",
+    "correctAnswer": "0.9332",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 1.5"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 1.5",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.9332",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.9332",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_003",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=0, σ=1. Find P(X<1.5).",
+    "correctAnswer": "0.9332",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 1.5"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 1.5",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.9332",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.9332",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_004",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=0, σ=1. Find P(X>2).",
+    "correctAnswer": "0.0228",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 2"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 2",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.0228",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.0228",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_005",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=75, σ=8. Find P(X>85).",
+    "correctAnswer": "0.1056",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 1.25"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 1.25",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.1056",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.1056",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_006",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=30, σ=5. Find P(X<25).",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = -1"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = -1",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.1587",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_007",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=0, σ=1. Find P(X<-1.5).",
+    "correctAnswer": "0.0668",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = -1.5"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = -1.5",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.0668",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.0668",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_008",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=100, σ=20. Find P(X>130).",
+    "correctAnswer": "0.0668",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Z = 1.5"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Z = 1.5",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = 0.0668",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "0.0668",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_009",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=60, σ=12. Find P(70<X<between).",
+    "correctAnswer": "NaN",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Use Z-table"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Convert to Z",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = NaN",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "NaN",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_010",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Finding Probabilities",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "μ=0, σ=1. Find P(1<X<between).",
+    "correctAnswer": "NaN",
+    "hints": [
+      "Standardize: Z = (X-μ)/σ",
+      "Use Z-table"
+    ],
+    "tags": [
+      "normal",
+      "z-score"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "Convert to Z",
+          "explanation": "Z-score formula."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P = NaN",
+          "explanation": "Use standard normal CDF."
+        }
+      ],
+      "finalAnswer": "NaN",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_011",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=100, σ=15. P(85<X<115)?",
+    "correctAnswer": "0.6827",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.6827",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.6827",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_012",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=50, σ=10. P(X>60)?",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.1587",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_013",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=75, σ=8. P(X>80)?",
+    "correctAnswer": "0.266",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.266",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.266",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_014",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=30, σ=5. P(22<X<38)?",
+    "correctAnswer": "0.8904",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8904",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.8904",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_015",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=100, σ=15. P(X>85)?",
+    "correctAnswer": "0.8413",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8413",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.8413",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_016",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=0, σ=1. P(-2<X<1)?",
+    "correctAnswer": "0.8186",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8186",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.8186",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_017",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=60, σ=12. P(X>70)?",
+    "correctAnswer": "0.2023",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.2023",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.2023",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_018",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Applications",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "μ=50, σ=10. P(35<X<65)?",
+    "correctAnswer": "0.8664",
+    "hints": [
+      "Standardize each boundary"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8664",
+          "explanation": "Z-table lookup."
+        }
+      ],
+      "finalAnswer": "0.8664",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_019",
+    "moduleId": "normal-applications",
+    "topic": "Normal Applications",
+    "subtopic": "Percentiles",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Exam grades: μ=74, σ=7. If 12% get A's (top 12%), what is the lowest A grade?",
+    "correctAnswer": "83",
+    "hints": [
+      "Top 12% means P(Z>z)=0.12",
+      "Find z for P(Z<z)=0.88"
+    ],
+    "tags": [
+      "normal",
+      "percentile"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Find z",
+          "content": "P(Z<z)=0.88, z≈1.175",
+          "explanation": "Use inverse normal."
+        },
+        {
+          "step": 2,
+          "title": "Convert",
+          "content": "x = 74 + 1.175×7 = 82.22",
+          "explanation": "x = μ + zσ"
+        },
+        {
+          "step": 3,
+          "title": "Round",
+          "content": "Lowest A = 83",
+          "explanation": "Round up to whole grade."
+        }
+      ],
+      "finalAnswer": "83",
+      "commonMistakes": [
+        "Using 0.12 directly",
+        "Rounding down"
+      ]
+    }
+  },
+  {
+    "id": "normal_app_020",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Advanced",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "μ=3, σ=0.5. P(X<2.3)?",
+    "correctAnswer": "0.0808",
+    "hints": [
+      "Standardize carefully"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "0.0808",
+          "explanation": "Full calculation."
+        }
+      ],
+      "finalAnswer": "0.0808",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_021",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Advanced",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "μ=3, σ=0.005. P(outside 2.99-3.01)?",
+    "correctAnswer": "0.0455",
+    "hints": [
+      "Standardize carefully"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "0.0455",
+          "explanation": "Full calculation."
+        }
+      ],
+      "finalAnswer": "0.0455",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_022",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Advanced",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "μ=40, σ=2. P(X<43)?",
+    "correctAnswer": "0.9332",
+    "hints": [
+      "Standardize carefully"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "0.9332",
+          "explanation": "Full calculation."
+        }
+      ],
+      "finalAnswer": "0.9332",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_023",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Advanced",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "μ=300, σ=50. P(X<362)?",
+    "correctAnswer": "0.8925",
+    "hints": [
+      "Standardize carefully"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "0.8925",
+          "explanation": "Full calculation."
+        }
+      ],
+      "finalAnswer": "0.8925",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_024",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Advanced",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "μ=500, σ=100. P(X<650)?",
+    "correctAnswer": "0.9332",
+    "hints": [
+      "Standardize carefully"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "0.9332",
+          "explanation": "Full calculation."
+        }
+      ],
+      "finalAnswer": "0.9332",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_025",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=74, σ=9. P(X<65) = ____",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.1587",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_026",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=75, σ=10. P(X<75) = ____",
+    "correctAnswer": "0.5",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.5",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.5",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_027",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=76, σ=11. P(X<87) = ____",
+    "correctAnswer": "0.8413",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8413",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.8413",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_028",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=77, σ=12. P(X<65) = ____",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.1587",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_029",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=78, σ=13. P(X<78) = ____",
+    "correctAnswer": "0.5",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.5",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.5",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_030",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=79, σ=14. P(X<93) = ____",
+    "correctAnswer": "0.8413",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8413",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.8413",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_031",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=80, σ=5. P(X<75) = ____",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.1587",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_032",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=81, σ=6. P(X<81) = ____",
+    "correctAnswer": "0.5",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.5",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.5",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_033",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=82, σ=7. P(X<89) = ____",
+    "correctAnswer": "0.8413",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.8413",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.8413",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_034",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=83, σ=8. P(X<75) = ____",
+    "correctAnswer": "0.1587",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.1587",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.1587",
+      "commonMistakes": []
+    }
+  },
+  {
+    "id": "normal_app_035",
+    "moduleId": "normal-applications",
+    "topic": "Normal Distribution",
+    "subtopic": "Practice",
+    "difficulty": "Medium",
+    "type": "FillIn",
+    "question": "μ=84, σ=9. P(X<84) = ____",
+    "correctAnswer": "0.5",
+    "hints": [
+      "Z = (X-μ)/σ"
+    ],
+    "tags": [
+      "normal"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Result",
+          "content": "0.5",
+          "explanation": "CDF."
+        }
+      ],
+      "finalAnswer": "0.5",
+      "commonMistakes": []
+    }
+  }
+]

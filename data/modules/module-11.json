@@ -1,0 +1,51 @@
+{
+  "id": "normal-applications",
+  "title": "Applications of Normal Distribution",
+  "description": "Apply normal distribution to real-world problems.",
+  "order": 11,
+  "prerequisites": [
+    "normal-distribution"
+  ],
+  "lessons": [
+    {
+      "slug": "given-x-find-probability",
+      "title": "Given X, Find Probability",
+      "order": 1,
+      "diagrams": [
+        "/diagrams/normal-applications-1.svg"
+      ],
+      "examples": [],
+      "content": "## Given X, Find Probability\n\nStandardize and use Z-table.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "given-probability-find-x",
+      "title": "Given Probability, Find X",
+      "order": 2,
+      "diagrams": [
+        "/diagrams/normal-applications-2.svg"
+      ],
+      "examples": [],
+      "content": "## Given Probability, Find X\n\nUse inverse Z and x = μ + zσ.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "percentile-problems",
+      "title": "Percentile Problems",
+      "order": 3,
+      "diagrams": [
+        "/diagrams/normal-applications-3.svg"
+      ],
+      "examples": [],
+      "content": "## Percentile Problems\n\nFind values that separate top/bottom percentages.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    },
+    {
+      "slug": "real-world-applications",
+      "title": "Real-World Applications",
+      "order": 4,
+      "diagrams": [
+        "/diagrams/normal-applications-4.svg"
+      ],
+      "examples": [],
+      "content": "## Real-World Applications\n\nManufacturing QC, exam grades, measurements.\n\n### Key Points\n\n- Study this topic carefully with the interactive examples.\n- Practice related questions in the practice section.\n- Use the step-by-step solutions when you get stuck.\n\n### Formula\n\nFor this topic, refer to the Formula Sheet in the Tools section."
+    }
+  ]
+}
