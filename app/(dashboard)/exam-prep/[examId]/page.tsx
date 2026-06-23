@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { StepByStepSolution } from "@/components/practice/StepByStepSolution";
 import { formatTime } from "@/lib/utils";
 import type { McqOption, Solution } from "@/lib/types";
+import { useGuestProgress } from "@/lib/store/guest-progress";
 
 interface Question {
   id: string;
@@ -31,6 +32,7 @@ interface ExamResult {
 }
 
 function ExamContent({ examId }: { examId: string }) {
+  const guest = useGuestProgress();
   const [exam, setExam] = useState<{ name: string; timeLimit: number } | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,7 +74,8 @@ function ExamContent({ examId }: { examId: string }) {
     }
     const data = await res.json();
     setResult(data);
-  }, [submitted, exam, questions, answers, timeLeft, examId]);
+    guest.recordExam(examId, data.score, data.passed);
+  }, [submitted, exam, questions, answers, timeLeft, examId, guest]);
 
   useEffect(() => {
     if (submitted || !exam) return;

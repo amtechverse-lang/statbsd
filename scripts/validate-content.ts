@@ -79,6 +79,23 @@ if (totalQuestions < 340) {
   error(`Total questions ${totalQuestions} is less than 340`);
 }
 
+const importantFile = path.join(questionsDir, "important-questions.json");
+if (fs.existsSync(importantFile)) {
+  const important = JSON.parse(fs.readFileSync(importantFile, "utf-8")) as QuestionData[];
+  if (important.length < 25) {
+    error(`Expected at least 25 important questions, got ${important.length}`);
+  }
+  totalQuestions += important.length;
+  important.forEach((q) => {
+    if (!q.tags.includes("important")) {
+      error(`Important question ${q.id} missing 'important' tag`);
+    }
+  });
+  console.log(`  + ${important.length} important exam-style questions`);
+} else {
+  error("Missing important-questions.json");
+}
+
 console.log(`Validated ${moduleFiles.length} modules, ${totalQuestions} questions`);
 if (errors > 0) {
   console.error(`${errors} validation error(s)`);

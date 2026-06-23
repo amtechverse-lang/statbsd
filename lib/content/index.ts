@@ -1,0 +1,109 @@
+import * as fs from "fs";
+import * as path from "path";
+import type { ExamData, ModuleData, QuestionData } from "@/lib/types";
+
+const DATA_DIR = path.join(process.cwd(), "data");
+
+function loadJson<T>(filePath: string): T {
+  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
+}
+
+export function getModules(): ModuleData[] {
+  const modulesDir = path.join(DATA_DIR, "modules");
+  return fs
+    .readdirSync(modulesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => loadJson<ModuleData>(path.join(modulesDir, f)))
+    .sort((a, b) => a.order - b.order);
+}
+
+export function getModule(moduleId: string): ModuleData | undefined {
+  return getModules().find((m) => m.id === moduleId);
+}
+
+export function getLesson(moduleId: string, slug: string) {
+  const mod = getModule(moduleId);
+  if (!mod) return undefined;
+  const lesson = mod.lessons.find((l) => l.slug === slug);
+  if (!lesson) return undefined;
+  return {
+    ...lesson,
+    id: `${moduleId}/${lesson.slug}`,
+    moduleId: mod.id,
+    moduleTitle: mod.title,
+    moduleOrder: mod.order,
+  };
+}
+
+export function getAllQuestions(): QuestionData[] {
+  const questionsDir = path.join(DATA_DIR, "questions");
+  return fs
+    .readdirSync(questionsDir)
+    .filter((f) => f.endsWith(".json"))
+    .flatMap((f) => loadJson<QuestionData[]>(path.join(questionsDir, f)));
+}
+
+export function getQuestions(filters?: {
+  moduleId?: string;
+  difficulty?: string;
+  tag?: string;
+}): QuestionData[] {
+  let questions = getAllQuestions();
+  if (filters?.moduleId) {
+    questions = questions.filter((q) => q.moduleId === filters.moduleId);
+  }
+  if (filters?.difficulty) {
+    questions = questions.filter((q) => q.difficulty === filters.difficulty);
+  }
+  if (filters?.tag) {
+    questions = questions.filter((q) => q.tags.includes(filters.tag!));
+  }
+  return questions.sort((a, b) => a.id.localeCompare(b.id));
+}
+
+export function getQuestion(id: string): QuestionData | undefined {
+  return getAllQuestions().find((q) => q.id === id);
+}
+
+export function getExams(): ExamData[] {
+  const examsDir = path.join(DATA_DIR, "exams");
+  return fs
+    .readdirSync(examsDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => loadJson<ExamData>(path.join(examsDir, f)));
+}
+
+export function getExam(id: string): ExamData | undefined {
+  return getExams().find((e) => e.id === id);
+}
+
+export function stripQuestionAnswers(question: QuestionData) {
+  return {
+    id: question.id,
+    moduleId: question.moduleId,
+    topic: question.topic,
+    subtopic: question.subtopic,
+    difficulty: question.difficulty,
+    type: question.type,
+    question: question.question,
+    options: question.options,
+    hints: question.hints,
+    tags: question.tags,
+  };
+}
+
+export function getQuestionCountByModule(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const q of getAllQuestions()) {
+    counts[q.moduleId] = (counts[q.moduleId] ?? 0) + 1;
+  }
+  return counts;
+}
+
+export function getDifficultyCounts(moduleId: string): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const q of getQuestions({ moduleId })) {
+    counts[q.difficulty] = (counts[q.difficulty] ?? 0) + 1;
+  }
+  return counts;
+}

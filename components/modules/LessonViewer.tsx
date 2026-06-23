@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { MathRenderer } from "@/components/shared/MathRenderer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useGuestProgress } from "@/lib/store/guest-progress";
 
 interface LessonViewerProps {
   lesson: {
@@ -22,13 +23,11 @@ interface LessonViewerProps {
 }
 
 export function LessonViewer({ lesson, prev, next }: LessonViewerProps) {
+  const guest = useGuestProgress();
+
   useEffect(() => {
-    fetch("/api/progress", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ type: "lesson", lessonId: lesson.id, moduleId: lesson.moduleId }),
-    });
-  }, [lesson.id, lesson.moduleId]);
+    guest.completeLesson(lesson.id);
+  }, [lesson.id, guest]);
 
   const sections = lesson.content.split(/(?=## )/);
 

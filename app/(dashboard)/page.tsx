@@ -1,58 +1,32 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { ModuleCard } from "@/components/modules/ModuleCard";
 import { AchievementBadge } from "@/components/shared/AchievementBadge";
 import { CircularProgress } from "@/components/shared/CircularProgress";
-import type { ProgressSummary } from "@/lib/types";
+import { useContentMeta } from "@/lib/hooks/use-content-meta";
+import { useGuestProgress } from "@/lib/store/guest-progress";
 
 export default function HomePage() {
-  const { data: session } = useSession();
-  const [progress, setProgress] = useState<ProgressSummary | null>(null);
+  const { progress } = useContentMeta();
+  const guest = useGuestProgress();
+  const earnedKeys = new Set(guest.achievements);
 
-  useEffect(() => {
-    fetch("/api/progress")
-      .then((r) => {
-        if (!r.ok) throw new Error("Failed to load progress");
-        return r.json();
-      })
-      .then(setProgress)
-      .catch(() => setProgress(null));
-  }, []);
-
-  const inProgressModules = progress?.modules
-    .filter((m) => m.unlocked && m.progress > 0 && m.progress < 100)
-    .slice(0, 3) ?? [];
-
+  const inProgressModules =
+    progress?.modules.filter((m) => m.unlocked && m.progress > 0 && m.progress < 100).slice(0, 3) ?? [];
   const startModule = progress?.modules.find((m) => m.unlocked && m.progress === 0);
-
-  const earnedKeys = new Set(progress?.achievements.map((a) => a.key) ?? []);
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold">
-          Welcome back, {session?.user?.name?.split(" ")[0] ?? "Student"}!
-        </h1>
+        <h1 className="text-3xl font-bold">Welcome, Student!</h1>
         <p className="text-muted-foreground mt-1">
-          Continue your probability & statistics journey
+          Learn probability & statistics — progress saves in your browser (guest mode)
         </p>
       </div>
-
-      {!progress && session && (
-        <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950">
-          <CardContent className="pt-6">
-            <p className="text-sm">
-              Unable to load progress. On a fresh deploy, run database migrate and seed (see DEPLOYMENT.md).
-            </p>
-          </CardContent>
-        </Card>
-      )}
 
       {progress && (
         <Card>
@@ -111,11 +85,14 @@ export default function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>Get Started</CardTitle>
-            <CardDescription>Begin your learning journey with Module {startModule.order}</CardDescription>
+            <CardDescription>Begin with Module {startModule.order}</CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent className="flex flex-wrap gap-3">
             <Button asChild>
-              <Link href={`/modules/${startModule.id}`}>Start {startModule.title}</Link>
+              <Link href={`/modules/${startModule.id}`}>Start Learning</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/important">Important Questions</Link>
             </Button>
           </CardContent>
         </Card>
@@ -125,7 +102,6 @@ export default function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>Recommended</CardTitle>
-            <CardDescription>Based on your progress</CardDescription>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2">
@@ -144,11 +120,7 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold mb-4">Achievements</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {(progress.allAchievements ?? []).slice(0, 8).map((def) => (
-              <AchievementBadge
-                key={def.key}
-                achievement={def}
-                locked={!earnedKeys.has(def.key)}
-              />
+              <AchievementBadge key={def.key} achievement={def} locked={!earnedKeys.has(def.key)} />
             ))}
           </div>
         </section>
@@ -160,6 +132,9 @@ export default function HomePage() {
         </CardHeader>
         <CardContent className="flex flex-wrap gap-3">
           <Button asChild>
+            <Link href="/important">Important Questions</Link>
+          </Button>
+          <Button variant="outline" asChild>
             <Link href="/practice">Start Practice</Link>
           </Button>
           <Button variant="outline" asChild>

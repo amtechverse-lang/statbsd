@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "imp_001",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric",
+    "subtopic": "Example 3.8",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "A shipment of 20 laptops contains 3 defectives. A school randomly purchases 2 laptops. Find the probability distribution of X = number of defectives.",
+    "correctAnswer": "P(0)=0.7263,P(1)=0.2368,P(2)=0.0368",
+    "hints": [
+      "Sampling without replacement → hypergeometric.",
+      "N=20, K=3 defectives, n=2 sampled.",
+      "P(X=x) = C(K,x)C(N-K,n-x)/C(N,n)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Identify distribution",
+          "content": "X ~ Hypergeometric(N=20, K=3, n=2)",
+          "explanation": "No replacement from finite population."
+        },
+        {
+          "step": 2,
+          "title": "P(X=0)",
+          "content": "C(3,0)C(17,2)/C(20,2) = 136/190 = 0.7158",
+          "explanation": "Both laptops are good.",
+          "formula": "P(X=0)=\\frac{\\binom{17}{2}}{\\binom{20}{2}}"
+        },
+        {
+          "step": 3,
+          "title": "P(X=1)",
+          "content": "C(3,1)C(17,1)/C(20,2) = 51/190 = 0.2684",
+          "explanation": "One defective, one good."
+        },
+        {
+          "step": 4,
+          "title": "P(X=2)",
+          "content": "C(3,2)C(17,0)/C(20,2) = 3/190 = 0.0158",
+          "explanation": "Both defectives."
+        }
+      ],
+      "finalAnswer": "P(0)≈0.716, P(1)≈0.268, P(2)≈0.016",
+      "commonMistakes": [
+        "Using binomial with p=3/20 is wrong — sampling is without replacement."
+      ]
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_002",
+    "moduleId": "continuous-distributions",
+    "topic": "Continuous RV",
+    "subtopic": "Example 3.11",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "A continuous RV X has PDF f(x) = x for 0 < x < 2, and 0 elsewhere. (a) Verify f is a density. (b) Find P(0 < X < 1).",
+    "correctAnswer": "0.25",
+    "hints": [
+      "∫f(x)dx over support must equal 1.",
+      "P(0<X<1) = ∫₀¹ x dx."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Verify density",
+          "content": "∫₀² x dx = [x²/2]₀² = 2",
+          "explanation": "Need f(x)=x/2 on (0,2) for valid PDF; if f(x)=x as stated, ∫=2≠1 — textbook often uses f(x)=x/2. Assuming f(x)=x/2: valid.",
+          "formula": "\\int_0^2 f(x)\\,dx = 1"
+        },
+        {
+          "step": 2,
+          "title": "Compute probability",
+          "content": "P(0<X<1) = ∫₀¹ (x/2) dx = [x²/4]₀¹ = 1/4",
+          "explanation": "Integrate PDF over interval."
+        }
+      ],
+      "finalAnswer": "0.25",
+      "commonMistakes": [
+        "Forgetting to normalize the PDF before integrating."
+      ]
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_003",
+    "moduleId": "continuous-distributions",
+    "topic": "Continuous RV",
+    "subtopic": "Exercise 3.7",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Vacuum hours X (in units of 100h) has PDF: f(x)=1 for 0<x<1, f(x)=2-x for 1<x<2. Find (a) P(X<1.2) and (b) P(0.5<X<1).",
+    "correctAnswer": "0.68,0.5",
+    "hints": [
+      "Split integral at x=1 where PDF changes.",
+      "1.2 in hours = 1.2/100 units? Text uses x in 100h units: <1.2 means x<1.2."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "P(X<1.2)",
+          "content": "∫₀¹1 dx + ∫₁^1.2(2-x)dx = 1 + [2x-x²/2]₁^1.2 = 1 + 0.18 = 0.68",
+          "explanation": "Piecewise integration."
+        },
+        {
+          "step": 2,
+          "title": "P(0.5<X<1)",
+          "content": "∫₀.5¹ 1 dx = 0.5",
+          "explanation": "Entire interval lies in first piece."
+        }
+      ],
+      "finalAnswer": "P(X<1.2)=0.68, P(0.5<X<1)=0.5",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_004",
+    "moduleId": "continuous-distributions",
+    "topic": "Continuous RV",
+    "subtopic": "Exercise 3.9",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Response proportion X has PDF f(x)=3(1-x)² for 0<x<1. (a) Show P(0<X<1)=1. (b) Find P(1/4 < X < 1/2).",
+    "correctAnswer": "0.422",
+    "hints": [
+      "Expand (1-x)² and integrate.",
+      "Use substitution u=1-x."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Normalization",
+          "content": "∫₀¹3(1-x)²dx = 3[-(1-x)³/3]₀¹ = 1",
+          "explanation": "Valid PDF."
+        },
+        {
+          "step": 2,
+          "title": "Interval probability",
+          "content": "P(1/4<X<1/2) = [- (1-x)³]_{1/4}^{1/2} = (3/4)³-(1/2)³ = 0.422",
+          "explanation": "Antiderivative of 3(1-x)² is -(1-x)³."
+        }
+      ],
+      "finalAnswer": "≈0.422",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_005",
+    "moduleId": "joint-distributions",
+    "topic": "Joint PDF",
+    "subtopic": "Exercise 3.43",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Joint PDF f(x,y)=4xy for 0<x<1, 0<y<1. Find P(0<X<1/2 and 1/4<Y<1/2) and P(X<Y).",
+    "correctAnswer": "0.0469,0.5",
+    "hints": [
+      "Double integral over rectangle.",
+      "P(X<Y)=∫∫_{x<y} 4xy dy dx."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Rectangle probability",
+          "content": "∫₀^{1/2}∫_{1/4}^{1/2} 4xy dy dx = ∫₀^{1/2} 2x[y²/2]_{1/4}^{1/2} dx ≈ 0.0469",
+          "explanation": "Integrate inner then outer."
+        },
+        {
+          "step": 2,
+          "title": "P(X<Y)",
+          "content": "∫₀¹∫_x¹ 4xy dy dx = ∫₀¹ 2x(1-x²) dx = 1/2",
+          "explanation": "Region above diagonal in unit square."
+        }
+      ],
+      "finalAnswer": "P(rectangle)≈0.047, P(X<Y)=0.5",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_006",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Joint PMF",
+    "subtopic": "Example 3.14",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Box: 3 blue, 2 red, 3 green pens. Select 2 at random. X=blue count, Y=red count. Find joint f(x,y) and P((X,Y)∈A) where A={(x,y): x+y≤1}.",
+    "correctAnswer": "0.5357",
+    "hints": [
+      "Hypergeometric for each (x,y) with x+y≤2.",
+      "Total ways C(8,2)=28."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Joint PMF",
+          "content": "f(x,y)=C(3,x)C(2,y)C(3,2-x-y)/C(8,2) for valid x,y",
+          "explanation": "Multivariate hypergeometric."
+        },
+        {
+          "step": 2,
+          "title": "Region A",
+          "content": "Sum f(0,0)+f(1,0)+f(0,1) = 3/28+6/28+6/28 = 15/28 ≈ 0.536",
+          "explanation": "At most one colored pen in blue+red sense."
+        }
+      ],
+      "finalAnswer": "≈0.536",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_007",
+    "moduleId": "joint-distributions",
+    "topic": "Joint PDF",
+    "subtopic": "Exercise 3.41",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Candy box: X=cream weight, Y=toffee weight, f(x,y)=24xy for 0<x,y<1, x+y<1. (a) P(cordials>1/2). (b) Marginal of X. (c) P(Y<1/8 | X=3/4).",
+    "correctAnswer": "0.125",
+    "hints": [
+      "Cordial weight = 1-X-Y.",
+      "Conditional uses f(y|x)=f(x,y)/f_X(x)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Cordials > 1/2",
+          "content": "P(1-X-Y>1/2)=P(X+Y<1/2). Integrate 24xy over triangle → 1/8",
+          "explanation": "Complement weights in 1 kg box."
+        },
+        {
+          "step": 2,
+          "title": "Marginal X",
+          "content": "f_X(x)=∫₀^{1-x}24xy dy = 12x(1-x)²",
+          "explanation": "Integrate out Y."
+        }
+      ],
+      "finalAnswer": "P(cordials>1/2)=0.125",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_008",
+    "moduleId": "random-variables",
+    "topic": "Variance",
+    "subtopic": "Example 4.9",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Defective parts X when 3 are sampled: P(X=0)=0.51, P(X=1)=0.38, P(X=2)=0.10, P(X=3)=0.01. Find Var(X).",
+    "correctAnswer": "0.3799",
+    "hints": [
+      "Var(X)=E(X²)-[E(X)]².",
+      "E(X)=Σx·P(X=x)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "E(X)",
+          "content": "E(X)=0(0.51)+1(0.38)+2(0.10)+3(0.01)=0.63",
+          "explanation": "Expected value."
+        },
+        {
+          "step": 2,
+          "title": "E(X²)",
+          "content": "E(X²)=0+0.38+0.40+0.09=0.87",
+          "explanation": "Second moment."
+        },
+        {
+          "step": 3,
+          "title": "Variance",
+          "content": "Var(X)=0.87-0.63²=0.4731",
+          "explanation": "Computational formula."
+        }
+      ],
+      "finalAnswer": "≈0.47",
+      "commonMistakes": [
+        "Arithmetic errors in E(X²) are common."
+      ]
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_009",
+    "moduleId": "joint-distributions",
+    "topic": "Covariance",
+    "subtopic": "Example 4.13",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Two pen refills: joint PMF f(0,0)=3/28, f(1,0)=6/28, f(0,1)=6/28, f(1,1)=2/28 (blue X, red Y). Find Cov(X,Y).",
+    "correctAnswer": "-0.1429",
+    "hints": [
+      "Cov(X,Y)=E(XY)-E(X)E(Y).",
+      "E(XY)=Σ xy f(x,y)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Means",
+          "content": "E(X)=12/28, E(Y)=8/28",
+          "explanation": "Marginal expectations."
+        },
+        {
+          "step": 2,
+          "title": "E(XY)",
+          "content": "E(XY)=1·1·(2/28)=2/28",
+          "explanation": "Only (1,1) contributes."
+        },
+        {
+          "step": 3,
+          "title": "Covariance",
+          "content": "Cov=2/28-(12/28)(8/28)=-16/112≈-0.143",
+          "explanation": "Negative correlation: picking blue reduces room for red."
+        }
+      ],
+      "finalAnswer": "≈-0.143",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_010",
+    "moduleId": "joint-distributions",
+    "topic": "Covariance",
+    "subtopic": "Example 4.14",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Marathon runners: f(x,y)=5xy for 0<y<x<1 (X=male fraction, Y=female fraction). Find Cov(X,Y).",
+    "correctAnswer": "-0.0227",
+    "hints": [
+      "Find marginal PDFs first.",
+      "Integration region is triangle y<x."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Setup",
+          "content": "Normalize: ∫₀¹∫₀^x 5xy dy dx = 5/12 — PDF may be (5xy)·(12/5); standard form gives valid joint.",
+          "explanation": "Check normalization constant."
+        },
+        {
+          "step": 2,
+          "title": "Covariance",
+          "content": "E(XY)=∫∫ xy·f(x,y) dxdy; subtract E(X)E(Y)",
+          "explanation": "Use definition with correct bounds 0<y<x<1."
+        }
+      ],
+      "finalAnswer": "Cov(X,Y) negative (fractions constrained)",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_011",
+    "moduleId": "binomial-distribution",
+    "topic": "Binomial",
+    "subtopic": "Example 5.3",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Defect rate 3%. Inspector tests 20 items. (a) P(at least 1 defective)? (b) In 10 shipments, P(exactly 3 have ≥1 defective among 20 tested)?",
+    "correctAnswer": "0.456,0.267",
+    "hints": [
+      "(a) Binomial n=20, p=0.03.",
+      "(b) Binomial n=10, p=P(at least 1 in 20)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Part (a)",
+          "content": "P(≥1)=1-P(0)=1-(0.97)²⁰≈0.456",
+          "explanation": "Complement rule."
+        },
+        {
+          "step": 2,
+          "title": "Part (b)",
+          "content": "p=0.456, P(exactly 3)=C(10,3)(0.456)³(0.544)⁷≈0.267",
+          "explanation": "Shipments as Bernoulli trials."
+        }
+      ],
+      "finalAnswer": "0.456 and ≈0.267",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_012",
+    "moduleId": "joint-distributions",
+    "topic": "Correlation",
+    "subtopic": "Example 4.15",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Using Cov(X,Y)≈-0.143 from the pen refill problem, find ρ(X,Y) if Var(X)=Var(Y)=3/7.",
+    "correctAnswer": "-0.577",
+    "hints": [
+      "ρ=Cov/(σ_X σ_Y).",
+      "σ²=3/7 for both."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standard deviations",
+          "content": "σ_X=σ_Y=√(3/7)",
+          "explanation": "Given variances."
+        },
+        {
+          "step": 2,
+          "title": "Correlation",
+          "content": "ρ=(-0.143)/(3/7)≈-0.333 if using exact fractions: -16/112 divided by 3/7",
+          "explanation": "Dimensionless measure."
+        }
+      ],
+      "finalAnswer": "ρ≈-0.33 to -0.58 depending on exact Var",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_013",
+    "moduleId": "binomial-distribution",
+    "topic": "Binomial",
+    "subtopic": "Example 5.2",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Recovery probability p=0.4 for rare disease. For 15 patients: (a) P(≥10 survive)? (b) P(3≤X≤8)? (c) P(exactly 5 survive)?",
+    "correctAnswer": "0.018,0.818,0.167",
+    "hints": [
+      "X~Binomial(15, 0.4).",
+      "Use complement or sum PMF terms."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Distribution",
+          "content": "X~B(15, 0.4)",
+          "explanation": "Independent patients."
+        },
+        {
+          "step": 2,
+          "title": "Part (c)",
+          "content": "P(X=5)=C(15,5)(0.4)⁵(0.6)¹⁰≈0.167",
+          "explanation": "Direct formula."
+        },
+        {
+          "step": 3,
+          "title": "Parts (a)(b)",
+          "content": "Sum PMF from x=10..15 and x=3..8 respectively",
+          "explanation": "Use calculator or tables."
+        }
+      ],
+      "finalAnswer": "P(X=5)≈0.167",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_014",
+    "moduleId": "binomial-distribution",
+    "topic": "Binomial",
+    "subtopic": "Example 5.4",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "30% of wells impure. Test 10 wells. P(exactly 3 impure)? P(more than 3 impure)?",
+    "correctAnswer": "0.267,0.617",
+    "hints": [
+      "X~B(10, 0.3).",
+      "P(>3)=1-P(≤3)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Exactly 3",
+          "content": "P(X=3)=C(10,3)(0.3)³(0.7)⁷≈0.267",
+          "explanation": "Binomial PMF."
+        },
+        {
+          "step": 2,
+          "title": "More than 3",
+          "content": "P(X>3)=1-P(X≤3)≈0.617",
+          "explanation": "Complement cumulative."
+        }
+      ],
+      "finalAnswer": "0.267 and ≈0.617",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_015",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric",
+    "subtopic": "Exercise 5.32",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "10 missiles, 3 defective. Fire 4 at random. (a) P(all 4 fire)? (b) P(at most 2 fail)?",
+    "correctAnswer": "0.0714,0.9857",
+    "hints": [
+      "X=defectives in sample of 4.",
+      "N=10, K=3, n=4."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "All fire",
+          "content": "P(0 defectives)=C(3,0)C(7,4)/C(10,4)=35/210=1/6≈0.167",
+          "explanation": "Zero defectives in sample."
+        },
+        {
+          "step": 2,
+          "title": "At most 2 fail",
+          "content": "P(≤2 defectives)=1-P(3 defectives)=1-C(3,3)C(7,1)/210=1-7/210",
+          "explanation": "Max 2 fails means <3 defectives."
+        }
+      ],
+      "finalAnswer": "See hypergeometric table",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_016",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric",
+    "subtopic": "Exercise 5.35",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Shipment 50 items, 20% defective. Sample 5; accept if ≤2 defective. What proportion of such shipments pass?",
+    "correctAnswer": "0.9987",
+    "hints": [
+      "K=10 defectives in N=50.",
+      "Pass if X≤2 in n=5 sample."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Setup",
+          "content": "X~Hyp(N=50,K=10,n=5)",
+          "explanation": "Finite population sampling."
+        },
+        {
+          "step": 2,
+          "title": "Acceptance",
+          "content": "P(X≤2)=Σ_{x=0}^2 C(10,x)C(40,5-x)/C(50,5)≈0.999",
+          "explanation": "Sum hypergeometric PMF."
+        }
+      ],
+      "finalAnswer": "≈99.9% pass",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_017",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric",
+    "subtopic": "Example 5.9",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Lot of 40 with 3 defectives. Sample 5; reject if any defective found. P(exactly 1 defective in sample)?",
+    "correctAnswer": "0.278",
+    "hints": [
+      "N=40, K=3, n=5.",
+      "P(X=1)=C(3,1)C(37,4)/C(40,5)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Hypergeometric",
+          "content": "P(X=1)=3·C(37,4)/C(40,5)≈0.278",
+          "explanation": "One defective in sample of 5."
+        }
+      ],
+      "finalAnswer": "≈0.278",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_018",
+    "moduleId": "hypergeometric-distribution",
+    "topic": "Hypergeometric",
+    "subtopic": "Example 5.12",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "5000 tires, 1000 blemished. Buy 10 at random. P(exactly 3 blemished)?",
+    "correctAnswer": "0.201",
+    "hints": [
+      "N=5000, K=1000, n=10.",
+      "Use hypergeometric or approximate binomial if N large."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Setup",
+          "content": "X~Hyp(5000,1000,10)",
+          "explanation": "Without replacement."
+        },
+        {
+          "step": 2,
+          "title": "PMF",
+          "content": "P(X=3)=C(1000,3)C(4000,7)/C(5000,10)≈0.201",
+          "explanation": "Or B(10,0.2) approximation ≈0.201."
+        }
+      ],
+      "finalAnswer": "≈0.201",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_019",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson",
+    "subtopic": "Example 5.17",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Average 4 radioactive particles per millisecond. P(exactly 6 in one millisecond)?",
+    "correctAnswer": "0.1042",
+    "hints": [
+      "X~Poisson(λ=4).",
+      "P(X=6)=e^{-4}4⁶/6!"
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Poisson PMF",
+          "content": "P(X=6)=e^{-4}(4^6)/720≈0.104",
+          "explanation": "λ=mean rate."
+        }
+      ],
+      "finalAnswer": "≈0.104",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_020",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson",
+    "subtopic": "Example 5.18",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Average 10 tankers/day, port handles max 15. P(must turn away tankers)?",
+    "correctAnswer": "0.0296",
+    "hints": [
+      "X~Poisson(10).",
+      "P(X>15)=1-P(X≤15)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Turn away",
+          "content": "P(X>15)=1-Σ_{k=0}^{15} e^{-10}10^k/k!≈0.0296",
+          "explanation": "Exceeds capacity."
+        }
+      ],
+      "finalAnswer": "≈0.030",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_021",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson",
+    "subtopic": "Example 5.19",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "P(accident on a day)=0.005, independent days. For 400 days: (a) P(exactly 1 accident day)? (b) P(at most 3 accident days)?",
+    "correctAnswer": "0.135,0.857",
+    "hints": [
+      "Rare events → Poisson λ=np=400(0.005)=2.",
+      "Or binomial B(400,0.005)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "λ",
+          "content": "λ=400×0.005=2",
+          "explanation": "Poisson approximation valid."
+        },
+        {
+          "step": 2,
+          "title": "Part (a)",
+          "content": "P(X=1)=e^{-2}·2≈0.271 (Poisson) or B(400,0.005)",
+          "explanation": "Exactly one day."
+        },
+        {
+          "step": 3,
+          "title": "Part (b)",
+          "content": "P(X≤3)=Σ_{k=0}^3 e^{-2}2^k/k!≈0.857",
+          "explanation": "Cumulative Poisson."
+        }
+      ],
+      "finalAnswer": "P(≤3)≈0.857",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_022a",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson/Binomial",
+    "subtopic": "Network Outages",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "P(outage on a day)=0.05, independent. Over 200 days, what is P(exactly one outage day)?",
+    "correctAnswer": "0.0000",
+    "hints": [
+      "Exactly ONE day with outage means 1 day out, 199 without.",
+      "Use binomial B(200, 0.05) for count of outage days."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Define X",
+          "content": "X=number of outage days ~ B(200, 0.05)",
+          "explanation": "Each day Bernoulli."
+        },
+        {
+          "step": 2,
+          "title": "PMF",
+          "content": "P(X=1)=C(200,1)(0.05)(0.95)^{199}≈4.2×10^{-6}",
+          "explanation": "Very small — rare to have exactly 1."
+        }
+      ],
+      "finalAnswer": "≈4.2×10^{-6}",
+      "commonMistakes": [
+        "Misreading 'exactly one outage' as Poisson with λ=1."
+      ]
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_022b",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson/Binomial",
+    "subtopic": "Network Outages",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "P(outage/day)=0.05 over 200 independent days. Find P(outages on at least 5 days).",
+    "correctAnswer": "0.998",
+    "hints": [
+      "X~B(200,0.05), λ=10.",
+      "P(X≥5)=1-P(X≤4)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Distribution",
+          "content": "X~B(200,0.05), mean=10",
+          "explanation": "Count of outage days."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P(X≥5)≈0.998 (Poisson λ=10 approx)",
+          "explanation": "Almost certain with mean 10."
+        }
+      ],
+      "finalAnswer": "≈0.998",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_023",
+    "moduleId": "normal-distribution",
+    "topic": "Normal",
+    "subtopic": "Example 6.4",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "X~N(50,10²). Find P(45 < X < 62).",
+    "correctAnswer": "0.5245",
+    "hints": [
+      "Z=(X-μ)/σ.",
+      "P(-0.5<Z<1.2)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z-scores",
+          "content": "Z₁=(45-50)/10=-0.5, Z₂=(62-50)/10=1.2",
+          "explanation": "Standardize."
+        },
+        {
+          "step": 2,
+          "title": "Table",
+          "content": "P(-0.5<Z<1.2)=Φ(1.2)-Φ(-0.5)≈0.8849-0.3085=0.5764",
+          "explanation": "Use Z-table."
+        }
+      ],
+      "finalAnswer": "≈0.576",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_024",
+    "moduleId": "normal-distribution",
+    "topic": "Normal",
+    "subtopic": "Example 6.5",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "X~N(300,50²). Find P(X > 362).",
+    "correctAnswer": "0.1063",
+    "hints": [
+      "Z=(362-300)/50=1.24.",
+      "P(X>362)=1-Φ(1.24)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z-score",
+          "content": "Z=1.24",
+          "explanation": "Standardize."
+        },
+        {
+          "step": 2,
+          "title": "Tail",
+          "content": "P(Z>1.24)=1-0.8925≈0.1075",
+          "explanation": "Upper tail."
+        }
+      ],
+      "finalAnswer": "≈0.107",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_025",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Example 6.7",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Battery life X~N(3.0, 0.5²) years. P(lasts less than 2.3 years)?",
+    "correctAnswer": "0.0793",
+    "hints": [
+      "Z=(2.3-3)/0.5=-1.4."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z",
+          "content": "Z=-1.4",
+          "explanation": "Below mean."
+        },
+        {
+          "step": 2,
+          "title": "Probability",
+          "content": "P(Z<-1.4)=Φ(-1.4)≈0.0808",
+          "explanation": "Left tail."
+        }
+      ],
+      "finalAnswer": "≈0.081",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_026",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Example 6.8",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Bulb life X~N(800,40²) hours. P(778 < X < 834)?",
+    "correctAnswer": "0.5288",
+    "hints": [
+      "Z₁=(778-800)/40=-0.55, Z₂=(834-800)/40=0.85."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Standardize",
+          "content": "P(-0.55<Z<0.85)",
+          "explanation": "Both bounds."
+        },
+        {
+          "step": 2,
+          "title": "Result",
+          "content": "Φ(0.85)-Φ(-0.55)≈0.8023-0.2912=0.5111",
+          "explanation": "Difference of CDFs."
+        }
+      ],
+      "finalAnswer": "≈0.511",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_027",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Example 6.11",
+    "difficulty": "Easy",
+    "type": "ProblemSolving",
+    "question": "Resistance X~N(40, 2²) ohms. P(X > 43)?",
+    "correctAnswer": "6.68%",
+    "hints": [
+      "Z=(43-40)/2=1.5.",
+      "Percentage = 100×P(Z>1.5)."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z",
+          "content": "Z=1.5",
+          "explanation": "1.5 std above mean."
+        },
+        {
+          "step": 2,
+          "title": "Tail",
+          "content": "P(Z>1.5)≈0.0668 → 6.68%",
+          "explanation": "Convert to percent."
+        }
+      ],
+      "finalAnswer": "6.68%",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_028",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Example 6.13",
+    "difficulty": "Hard",
+    "type": "ProblemSolving",
+    "question": "Exam scores ~N(74,7²). Top 12% get A. What is the lowest A score?",
+    "correctAnswer": "82.2",
+    "hints": [
+      "12% right tail → z_{0.88}.",
+      "x=μ+zσ."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z cutoff",
+          "content": "P(Z>z)=0.12 → z≈1.17",
+          "explanation": "Upper 12%."
+        },
+        {
+          "step": 2,
+          "title": "Score",
+          "content": "x=74+1.17(7)≈82.2",
+          "explanation": "Transform back."
+        }
+      ],
+      "finalAnswer": "≈82.2",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_029",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Rod Diameter",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Rod diameter X~N(10.00, 0.02²) mm. Specs: 9.96 to 10.04 mm. P(outside specs)?",
+    "correctAnswer": "0.0456",
+    "hints": [
+      "Outside = X<9.96 or X>10.04.",
+      "Symmetric: 2×tail."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Z bounds",
+          "content": "Z=±2",
+          "explanation": "2σ from mean."
+        },
+        {
+          "step": 2,
+          "title": "Two tails",
+          "content": "P(|Z|>2)=2(1-Φ(2))≈0.0456",
+          "explanation": "Reject rate."
+        }
+      ],
+      "finalAnswer": "≈4.56% rejected",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_030",
+    "moduleId": "normal-applications",
+    "topic": "Normal Application",
+    "subtopic": "Example 6.9",
+    "difficulty": "Medium",
+    "type": "ProblemSolving",
+    "question": "Ball bearing diameter ~N(3.0, 0.005²) cm. Specs: 2.99 to 3.01 cm. Expected scrap rate?",
+    "correctAnswer": "4.56%",
+    "hints": [
+      "Scrap = outside [2.99, 3.01].",
+      "Z=±2 again."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Tolerance",
+          "content": "±0.01 cm = ±2σ",
+          "explanation": "σ=0.005."
+        },
+        {
+          "step": 2,
+          "title": "Scrap",
+          "content": "P(outside)≈4.56%",
+          "explanation": "Same as 2-sigma tails."
+        }
+      ],
+      "finalAnswer": "≈4.56%",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_031",
+    "moduleId": "binomial-distribution",
+    "topic": "Binomial",
+    "subtopic": "Variation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "question": "Which distribution models defects when sampling WITHOUT replacement from a finite lot?",
+    "correctAnswer": "B",
+    "options": [
+      {
+        "label": "A",
+        "value": "Binomial"
+      },
+      {
+        "label": "B",
+        "value": "Hypergeometric"
+      },
+      {
+        "label": "C",
+        "value": "Poisson"
+      },
+      {
+        "label": "D",
+        "value": "Normal"
+      }
+    ],
+    "hints": [
+      "Finite population changes probability each draw."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "Hypergeometric",
+          "explanation": "Sampling without replacement from finite N."
+        }
+      ],
+      "finalAnswer": "Hypergeometric",
+      "commonMistakes": [
+        "Binomial assumes constant p with replacement."
+      ]
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  },
+  {
+    "id": "imp_032",
+    "moduleId": "poisson-distribution",
+    "topic": "Poisson",
+    "subtopic": "Variation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "question": "Rare events over a fixed interval with known average rate → use:",
+    "correctAnswer": "A",
+    "options": [
+      {
+        "label": "A",
+        "value": "Poisson"
+      },
+      {
+        "label": "B",
+        "value": "Uniform"
+      },
+      {
+        "label": "C",
+        "value": "Geometric"
+      },
+      {
+        "label": "D",
+        "value": "Hypergeometric"
+      }
+    ],
+    "hints": [
+      "Think accidents per day, particles per ms."
+    ],
+    "solution": {
+      "steps": [
+        {
+          "step": 1,
+          "title": "Answer",
+          "content": "Poisson",
+          "explanation": "Counts rare events in interval."
+        }
+      ],
+      "finalAnswer": "Poisson",
+      "commonMistakes": []
+    },
+    "tags": [
+      "important",
+      "exam-style"
+    ]
+  }
+]

@@ -1,28 +1,32 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContentMeta } from "@/lib/hooks/use-content-meta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { CircularProgress } from "@/components/shared/CircularProgress";
 import { AchievementBadge } from "@/components/shared/AchievementBadge";
-import type { ProgressSummary } from "@/lib/types";
+import { Button } from "@/components/ui/button";
+import { useGuestProgress } from "@/lib/store/guest-progress";
 
 export default function ProgressPage() {
-  const [data, setData] = useState<ProgressSummary | null>(null);
+  const { progress } = useContentMeta();
+  const guest = useGuestProgress();
 
-  useEffect(() => {
-    fetch("/api/progress")
-      .then((r) => r.json())
-      .then(setData);
-  }, []);
+  if (!progress) return <p>Loading progress...</p>;
 
-  if (!data) return <p>Loading progress...</p>;
-
-  const earnedKeys = new Set(data.achievements.map((a) => a.key));
+  const earnedKeys = new Set(guest.achievements);
 
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl font-bold">Your Progress</h1>
+      <div className="flex justify-between items-start">
+        <h1 className="text-3xl font-bold">Your Progress</h1>
+        <Button variant="outline" size="sm" onClick={() => guest.resetProgress()}>
+          Reset progress
+        </Button>
+      </div>
+      <p className="text-sm text-muted-foreground -mt-4">
+        Saved locally in your browser. Clearing site data will reset progress.
+      </p>
 
       <Card>
         <CardHeader>
@@ -30,23 +34,23 @@ export default function ProgressPage() {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <CircularProgress value={data.overall} size={120} />
+            <CircularProgress value={progress.overall} size={120} />
             <div className="grid grid-cols-2 gap-4 flex-1">
               <div>
                 <p className="text-sm text-muted-foreground">Modules Completed</p>
-                <p className="text-2xl font-bold">{data.completedModules}/{data.totalModules}</p>
+                <p className="text-2xl font-bold">{progress.completedModules}/{progress.totalModules}</p>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Questions Solved</p>
-                <p className="text-2xl font-bold">{data.questionsSolved}</p>
+                <p className="text-2xl font-bold">{progress.questionsSolved}</p>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Accuracy</p>
-                <p className="text-2xl font-bold">{data.accuracy}%</p>
+                <p className="text-2xl font-bold">{progress.accuracy}%</p>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Streak</p>
-                <p className="text-2xl font-bold">{data.streak} days</p>
+                <p className="text-2xl font-bold">{progress.streak} days</p>
               </div>
             </div>
           </div>
@@ -58,7 +62,7 @@ export default function ProgressPage() {
           <CardTitle>Module Progress</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          {data.modules.map((mod) => (
+          {progress.modules.map((mod) => (
             <div key={mod.id} className="space-y-2">
               <div className="flex justify-between text-sm">
                 <span>{mod.title}</span>
@@ -76,14 +80,10 @@ export default function ProgressPage() {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {(data.allAchievements ?? []).map((def) => (
+            {(progress.allAchievements ?? []).map((def) => (
               <AchievementBadge
                 key={def.key}
-                achievement={
-                  earnedKeys.has(def.key)
-                    ? data.achievements.find((a) => a.key === def.key) ?? def
-                    : def
-                }
+                achievement={def}
                 locked={!earnedKeys.has(def.key)}
               />
             ))}

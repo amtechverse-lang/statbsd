@@ -1,118 +1,79 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import { prisma } from "@/lib/db/prisma";
-import { checkAchievements } from "@/lib/progress";
+import { getExams, getQuestion } from "@/lib/content";
 import { answersMatch } from "@/lib/utils";
 import type { Solution } from "@/lib/types";
 
 function checkMcqAnswer(
   answer: string,
   correctAnswer: string,
-  options: { label: string; value: string }[] | null
+  options: { label: string; value: string }[] | undefined
 ): boolean {
-  if (!options?.length) return answer === correctAnswer;
+  if (!options?.length) return answersMatch(answer, correctAnswer);
   const correctOpt = options.find((o) => o.label === correctAnswer);
   const selectedOpt = options.find((o) => o.label === answer);
   if (correctOpt && selectedOpt) return answersMatch(selectedOpt.value, correctOpt.value);
   if (selectedOpt && answersMatch(selectedOpt.value, correctAnswer)) return true;
-  return answer === correctAnswer;
+  return answersMatch(answer, correctAnswer);
 }
 
 export async function GET() {
-  const session = await getServerSession(authOptions);
-  if (!session?.user?.id) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const exams = await prisma.exam.findMany({ orderBy: { id: "asc" } });
+  const exams = getExams();
   return NextResponse.json(exams);
 }
 
 export async function POST(request: Request) {
-  const session = await getServerSession(authOptions);
-  if (!session?.user?.id) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const { examId, answers, timeTaken } = await request.json();
-  const userId = session.user.id;
-
-  const exam = await prisma.exam.findUnique({ where: { id: examId } });
+  const { examId, answers } = await request.json();
+  const exam = getExams().find((e) => e.id === examId);
   if (!exam) return NextResponse.json({ error: "Exam not found" }, { status: 404 });
 
-  const questions = await prisma.question.findMany({
-    where: { id: { in: exam.questionIds } },
-  });
-
-  const questionOrder = exam.questionIds.map(
-    (id) => questions.find((q) => q.id === id)!
-  ).filter(Boolean);
-
-  let correct = 0;
+  const results: { id: string; correct: boolean; correctAnswer: string; solution: Solution }[] = [];
   const topicBreakdown: Record<string, { correct: number; total: number }> = {};
+  let correctCount = 0;
 
-  questionOrder.forEach((q, i) => {
+  exam.questionIds.forEach((qid, i) => {
+    const question = getQuestion(qid);
+    if (!question) return;
     const userAnswer = answers[i] ?? "";
-    let isCorrect = false;
-    if (q.type === "MCQ") {
-      isCorrect = checkMcqAnswer(
-        userAnswer,
-        q.correctAnswer,
-        q.options as { label: string; value: string }[] | null
-      );
-    } else {
-      isCorrect = answersMatch(userAnswer, q.correctAnswer);
+    const correct =
+      question.type === "MCQ"
+        ? checkMcqAnswer(userAnswer, question.correctAnswer, question.options)
+        : answersMatch(userAnswer, question.correctAnswer);
+    if (correct) correctCount++;
+    if (!topicBreakdown[question.topic]) {
+      topicBreakdown[question.topic] = { correct: 0, total: 0 };
     }
-    if (isCorrect) correct++;
-
-    if (!topicBreakdown[q.topic]) topicBreakdown[q.topic] = { correct: 0, total: 0 };
-    topicBreakdown[q.topic].total++;
-    if (isCorrect) topicBreakdown[q.topic].correct++;
+    topicBreakdown[question.topic].total++;
+    if (correct) topicBreakdown[question.topic].correct++;
+    results.push({
+      id: qid,
+      correct,
+      correctAnswer: question.correctAnswer,
+      solution: question.solution,
+    });
   });
 
-  const score = questionOrder.length > 0 ? (correct / questionOrder.length) * 100 : 0;
-
-  const attempt = await prisma.examAttempt.create({
-    data: {
-      userId,
-      examId,
-      answers,
-      score,
-      timeTaken,
-      topicBreakdown,
-    },
-  });
-
-  await checkAchievements(userId);
+  const total = exam.questionIds.length;
+  const score = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+  const passed = score >= exam.passingScore;
 
   const weakTopics = Object.entries(topicBreakdown)
     .filter(([, v]) => v.total > 0 && v.correct / v.total < 0.6)
     .map(([topic]) => topic);
 
-  const studyPlan = {
-    weakTopics,
-    recommendedModules: weakTopics.length > 0
-      ? await prisma.question.findMany({
-          where: { topic: { in: weakTopics } },
-          take: 5,
-          select: { id: true, question: true, moduleId: true, topic: true },
-        })
-      : [],
-  };
-
   return NextResponse.json({
     score,
-    correct,
-    total: questionOrder.length,
-    passed: score >= exam.passingScore,
+    correct: correctCount,
+    total,
+    passed,
     topicBreakdown,
-    studyPlan,
-    attemptId: attempt.id,
-    solutions: questionOrder.map((q) => ({
-      id: q.id,
-      correctAnswer: q.correctAnswer,
-      solution: q.solution as unknown as Solution,
-    })),
+    studyPlan: {
+      weakTopics,
+      recommendedModules: weakTopics.map((topic) => ({
+        id: topic.toLowerCase().replace(/\s+/g, "-"),
+        question: `Review ${topic}`,
+        moduleId: "exam-prep",
+      })),
+    },
+    solutions: results,
   });
 }
