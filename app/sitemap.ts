@@ -1,8 +1,13 @@
 import { MetadataRoute } from "next";
 
+function siteUrl() {
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://statbsd.vercel.app";
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXTAUTH_URL ?? "https://statmaster.vercel.app";
-  const routes = ["", "/modules", "/practice", "/progress", "/exam-prep", "/tools"];
+  const base = siteUrl();
+  const routes = ["", "/modules", "/practice", "/important", "/progress", "/exam-prep", "/tools"];
   return routes.map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

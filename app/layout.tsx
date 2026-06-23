@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | StatMaster",
   },
   description:
-    "Interactive self-paced learning platform for Probability & Statistics. Master distributions, practice 370+ questions, and prepare for exams.",
+    "Interactive self-paced learning platform for Probability & Statistics. Master distributions, practice 438+ questions, and prepare for exams.",
   keywords: ["probability", "statistics", "binomial", "normal distribution", "learning"],
 };
 
